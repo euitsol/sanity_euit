@@ -12,6 +12,7 @@ import {
 import { createTheme } from '@mui/material/styles';
 import Head from 'next/head';
 import NextLink from 'next/link';
+import classes from '../utils/classes';
 export default function layout({ title, description, children }) {
   const theme = createTheme({
     typography: {
@@ -45,17 +46,19 @@ export default function layout({ title, description, children }) {
       <ThemeProvider theme={theme}>
         <CssBaseline />
       </ThemeProvider>
-      <AppBar position="static">
-        <Toolbar>
+      <AppBar position="static" sx={classes.appbar}>
+        <Toolbar sx={classes.toolbar}>
           <NextLink href="/" passHref>
             <Link>
-              <Typography>Sanity Euit</Typography>
+              <Typography sx={classes.brand}>Sanity Euit</Typography>
             </Link>
           </NextLink>
         </Toolbar>
       </AppBar>
-      <Container component="main">{children}</Container>
-      <Box component="footer">
+      <Container component="main" sx={classes.main}>
+        {children}
+      </Container>
+      <Box component="footer" sx={classes.footer}>
         <Typography>All right reserved. Sanity Euit</Typography>
       </Box>
     </>
