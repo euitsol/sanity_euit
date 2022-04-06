@@ -48,7 +48,9 @@ export default function layout({ title, description, children }) {
       <AppBar position="static">
         <Toolbar>
           <NextLink href="/" passHref>
-            <Typography>Sanity Euit</Typography>
+            <Link>
+              <Typography>Sanity Euit</Typography>
+            </Link>
           </NextLink>
         </Toolbar>
       </AppBar>
