@@ -15,6 +15,13 @@ import NextLink from 'next/link';
 import classes from '../utils/classes';
 export default function layout({ title, description, children }) {
   const theme = createTheme({
+    components: {
+      MuiLink: {
+        defaultProps: {
+          underline: 'hover',
+        },
+      },
+    },
     typography: {
       h1: {
         fontSize: '1.6rem',
