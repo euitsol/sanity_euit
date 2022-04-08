@@ -47,7 +47,7 @@ export default function layout({ title, description, children }) {
   return (
     <>
       <Head>
-        <title>{title ? `${title} - Sanity Euit` : 'Sanity Euits'}</title>
+        <title>{title ? `${title} - Sanity Euit` : 'Sanity Euit'}</title>
         {description && <meta name="description" content={description}></meta>}
       </Head>
       <ThemeProvider theme={theme}>
@@ -57,7 +57,7 @@ export default function layout({ title, description, children }) {
         <Toolbar sx={classes.toolbar}>
           <NextLink href="/" passHref>
             <Link>
-              <Typography sx={classes.brand}>Sanity Euit</Typography>
+              <Typography sx={classes.brand}>Sanity Euits</Typography>
             </Link>
           </NextLink>
         </Toolbar>
