@@ -47,7 +47,7 @@ export default function layout({ title, description, children }) {
   return (
     <>
       <Head>
-        <title>{title ? `${title} - Sanity Euit` : 'Sanity Euit'}</title>
+        <title>{title ? `${title} - Sanity Euit` : 'Sanity Euits'}</title>
         {description && <meta name="description" content={description}></meta>}
       </Head>
       <ThemeProvider theme={theme}>
