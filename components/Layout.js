@@ -57,7 +57,7 @@ export default function layout({ title, description, children }) {
         <Toolbar sx={classes.toolbar}>
           <NextLink href="/" passHref>
             <Link>
-              <Typography sx={classes.brand}>Sanity Euits</Typography>
+              <Typography sx={classes.brand}>European IT Institute</Typography>
             </Link>
           </NextLink>
         </Toolbar>
