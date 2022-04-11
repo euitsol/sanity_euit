@@ -1,4 +1,10 @@
+import { FullscreenExit } from '@mui/icons-material';
+
 const classes = {
+  logo: {
+    width: '265px',
+    justifyContent: 'left',
+  },
   section: {
     marginTop: 1,
     marginBottom: 1,
@@ -7,9 +13,10 @@ const classes = {
     fontSize: '15px',
   },
   main: {
-    marginTop: 2,
+    marginTop: -35,
     minHeight: '80vh',
   },
+  carosoul: { width: '100%' },
   footer: {
     marginTop: 1,
     textAlign: 'center',
@@ -21,13 +28,17 @@ const classes = {
       marginLeft: 1,
     },
   },
-  toolbar: {
-    justifyContent: 'space-between',
-  },
+  // toolbar: {
+  //   justifyContent: 'space-between',
+  // },
+  // tabs: {
+  //   justifyContent: 'right',
+  // },
   brand: {
     fontWeight: 'bold',
     fontSize: '1.5rem',
   },
+
   navbarButton: {
     color: '#ffffff',
     textTransform: 'initial',

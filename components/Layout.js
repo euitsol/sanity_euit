@@ -8,11 +8,22 @@ import {
   Box,
   Typography,
   Link,
+  MenuItem,
+  Menu,
+  IconButton,
+  Tabs,
+  Tab,
+  CardMedia,
 } from '@mui/material';
 import { createTheme } from '@mui/material/styles';
 import Head from 'next/head';
 import NextLink from 'next/link';
+import * as React from 'react';
 import classes from '../utils/classes';
+import Carousel from 'react-elastic-carousel';
+import Item from './Item';
+import styles from '../styles/carosoul.module.css';
+const breakPoints = [{ width: 1, itemsToShow: 1 }];
 export default function layout({ title, description, children }) {
   const theme = createTheme({
     components: {
@@ -55,14 +66,88 @@ export default function layout({ title, description, children }) {
       </ThemeProvider>
       <AppBar position="static" sx={classes.appbar}>
         <Toolbar sx={classes.toolbar}>
-          <NextLink href="/" passHref>
+          <CardMedia
+            sx={classes.logo}
+            component="img"
+            image={'images/logo.png'}
+            title="ok"
+          ></CardMedia>
+          {/* <Box
+            component="img"
+            sx={{
+              height: 64,
+            }}
+            alt="Your logo."
+            src={logo}
+          /> */}
+
+          <Container>
+            <Tabs textColor="inherit" sx={classes.tabs}>
+              <NextLink href="/" passHref>
+                <Tab label="Home"></Tab>
+              </NextLink>
+              <NextLink href="#" passHref>
+                <Tab label="About Us"></Tab>
+              </NextLink>
+              <NextLink href="#" passHref>
+                <Tab label="Courses"></Tab>
+              </NextLink>
+              <NextLink href="#" passHref>
+                <Tab label="Events"></Tab>
+              </NextLink>
+              <NextLink href="#" passHref>
+                <Tab label="Gallery"></Tab>
+              </NextLink>
+              <NextLink href="#" passHref>
+                <Tab label="News"></Tab>
+              </NextLink>
+              <NextLink href="#" passHref>
+                <Tab label="Contact Us"></Tab>
+              </NextLink>
+            </Tabs>
+          </Container>
+          {/* <NextLink href="/" passHref>
             <Link>
               <Typography sx={classes.brand}>European IT Institute</Typography>
             </Link>
-          </NextLink>
+          </NextLink> */}
         </Toolbar>
       </AppBar>
+      <Container maxWidth="1400px" sx={{ marginTop: -30 }}>
+        <div className={styles.carosoul}>
+          <Carousel breakPoints={breakPoints}>
+            <Item>
+              <CardMedia
+                sx={classes.carosoul}
+                component="img"
+                image={'images/slider2.webp'}
+                title="ok"
+              ></CardMedia>
+            </Item>
+            <Item>
+              <CardMedia
+                sx={classes.carosoul}
+                component="img"
+                image={'images/slider2.webp'}
+                title="ok"
+              ></CardMedia>
+            </Item>
+            <Item>
+              <CardMedia
+                sx={classes.carosoul}
+                component="img"
+                image={'images/slider2.webp'}
+                title="ok"
+              ></CardMedia>
+            </Item>
+          </Carousel>
+        </div>
+      </Container>
       <Container component="main" sx={classes.main}>
+        <Typography variant="h3" textAlign="center">
+          Our Courses
+        </Typography>
+        <hr></hr>
         {children}
       </Container>
       <Box component="footer" sx={classes.footer}>
