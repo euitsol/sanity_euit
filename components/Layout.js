@@ -113,7 +113,7 @@ export default function layout({ title, description, children }) {
           </NextLink> */}
         </Toolbar>
       </AppBar>
-      <Container maxWidth="1400px" sx={{ marginTop: -30 }}>
+      <Container maxWidth="1400px">
         <div className={styles.carosoul}>
           <Carousel breakPoints={breakPoints}>
             <Item>
