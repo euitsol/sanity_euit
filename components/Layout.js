@@ -23,6 +23,7 @@ import classes from '../utils/classes';
 import Carousel from 'react-elastic-carousel';
 import Item from './Item';
 import styles from '../styles/carosoul.module.css';
+import { height } from '@mui/system';
 const breakPoints = [{ width: 1, itemsToShow: 1 }];
 export default function layout({ title, description, children }) {
   const theme = createTheme({

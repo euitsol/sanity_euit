@@ -13,10 +13,10 @@ const classes = {
     fontSize: '15px',
   },
   main: {
-    marginTop: -35,
     minHeight: '80vh',
+    marginTop: 10,
   },
-  carosoul: { width: '100%' },
+  carosoul: { width: '100%', height: '100vh' },
   footer: {
     marginTop: 1,
     textAlign: 'center',
