@@ -16,7 +16,7 @@ const classes = {
     minHeight: '80vh',
     marginTop: 10,
   },
-  carosoul: { width: '100%', height: '100vh' },
+  carosoul: { width: '100%' },
   footer: {
     marginTop: 1,
     textAlign: 'center',

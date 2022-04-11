@@ -117,7 +117,7 @@ export default function layout({ title, description, children }) {
       <Container maxWidth="1400px">
         <div className={styles.carosoul}>
           <Carousel breakPoints={breakPoints}>
-            <Item>
+            <Item sx={{ height: '100vh' }}>
               <CardMedia
                 sx={classes.carosoul}
                 component="img"
