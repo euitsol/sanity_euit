@@ -255,7 +255,7 @@ export default function layout({ title, description, children }) {
         <hr></hr>
         {children}
       </Container>
-      <Container component="main">
+      {/* <Container component="main">
         <Typography variant="h3" textAlign="center">
           Success
         </Typography>
@@ -305,7 +305,7 @@ export default function layout({ title, description, children }) {
             </Grid>
           </Grid>
         </Box>
-      </Container>
+      </Container> */}
       <Box component="footer" sx={classes.footer}>
         <Typography>All right reserved. Sanity Euit</Typography>
       </Box>
