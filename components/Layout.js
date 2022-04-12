@@ -114,7 +114,7 @@ export default function layout({ title, description, children }) {
           </NextLink> */}
         </Toolbar>
       </AppBar>
-      <Container maxWidth="1400px">
+      <Container component="main">
         <div className={styles.carosoul}>
           <Carousel breakPoints={breakPoints}>
             <Item>
