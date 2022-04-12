@@ -151,10 +151,10 @@ export default function layout({ title, description, children }) {
         </div>
       </Container>
       <Container component="main">
-        <Box sx={{ flexGrow: 1, background: 'white' }}>
+        <Box sx={{ flexGrow: 1 }}>
           <Grid container spacing={2}>
             <Grid item xs={4} md={4}>
-              <Item>
+              <Item sx={{ background: 'white' }}>
                 {' '}
                 <Card sx={{ maxWidth: 345 }}>
                   <CardActionArea>
