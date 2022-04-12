@@ -150,7 +150,7 @@ export default function layout({ title, description, children }) {
           </Carousel>
         </div>
       </Container>
-      <Container>
+      <Container component="main">
         <Box sx={{ flexGrow: 1 }}>
           <Grid container spacing={2}>
             <Grid item xs={4} md={4}>
