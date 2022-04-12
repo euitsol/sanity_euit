@@ -14,6 +14,12 @@ import {
   Tabs,
   Tab,
   CardMedia,
+  Button,
+  Grid,
+  CardContent,
+  Card,
+  CardActions,
+  CardActionArea,
 } from '@mui/material';
 import { createTheme } from '@mui/material/styles';
 import Head from 'next/head';
@@ -114,7 +120,7 @@ export default function layout({ title, description, children }) {
           </NextLink> */}
         </Toolbar>
       </AppBar>
-      <Container component="main">
+      <Container>
         <div className={styles.carosoul}>
           <Carousel breakPoints={breakPoints}>
             <Item>
@@ -144,6 +150,80 @@ export default function layout({ title, description, children }) {
           </Carousel>
         </div>
       </Container>
+      <Container>
+        <Box sx={{ flexGrow: 1 }}>
+          <Grid container spacing={2}>
+            <Grid item xs={4} md={4}>
+              <Item>
+                {' '}
+                <Card sx={{ maxWidth: 345 }}>
+                  <CardActionArea>
+                    <CardMedia
+                      component="img"
+                      height="140"
+                      image="images/slider1.webp"
+                      alt="green iguana"
+                    />
+                    <CardContent>
+                      <Typography gutterBottom variant="h5" component="div">
+                        6 Months/1 Year
+                      </Typography>
+                      <Typography variant="body2" color="text.secondary">
+                        For Seminar
+                      </Typography>
+                    </CardContent>
+                  </CardActionArea>
+                </Card>
+              </Item>
+            </Grid>
+            <Grid item xs={4} md={4}>
+              <Item>
+                <Card sx={{ maxWidth: 345 }}>
+                  <CardActionArea>
+                    <CardMedia
+                      component="img"
+                      height="140"
+                      image="images/slider1.webp"
+                      alt="green iguana"
+                    />
+                    <CardContent>
+                      <Typography gutterBottom variant="h5" component="div">
+                        Apply for
+                      </Typography>
+                      <Typography variant="body2" color="text.secondary">
+                        Online Tutorials
+                      </Typography>
+                    </CardContent>
+                  </CardActionArea>
+                </Card>
+              </Item>
+            </Grid>
+            <Grid item xs={4} md={4}>
+              <Item>
+                <Card sx={{ maxWidth: 345 }}>
+                  <CardActionArea>
+                    <CardMedia
+                      component="img"
+                      height="140"
+                      image="images/slider1.webp"
+                      alt="green iguana"
+                    />
+                    <CardContent>
+                      <Typography gutterBottom variant="h5" component="div">
+                        Free
+                      </Typography>
+                      <Typography variant="body2" color="text.secondary">
+                        New Courses
+                      </Typography>
+                    </CardContent>
+                  </CardActionArea>
+                </Card>
+              </Item>
+            </Grid>
+          </Grid>
+        </Box>
+      </Container>
+
       <Container component="main" sx={classes.main}>
         <Typography variant="h3" textAlign="center">
           Our Courses
