@@ -32,6 +32,12 @@ import styles from '../styles/carosoul.module.css';
 import { height } from '@mui/system';
 import { SupportAgent } from '@mui/icons-material';
 const breakPoints = [{ width: 1, itemsToShow: 1 }];
+const breakPoints2 = [
+  { width: 1, itemsToShow: 1 },
+  { width: 550, itemsToShow: 2 },
+  { width: 768, itemsToShow: 3 },
+  { width: 1200, itemsToShow: 4 },
+];
 import SupportAgentIcon from '@mui/icons-material/SupportAgent';
 export default function layout({ title, description, children }) {
   const theme = createTheme({
@@ -393,6 +399,79 @@ export default function layout({ title, description, children }) {
             </Grid>
           </Grid>
         </Box>
+      </Container>
+      <Container>
+        <Typography variant="h4" textAlign="center">
+          Our Partners
+        </Typography>
+        <div className={styles.carosoul}>
+          <Carousel breakPoints={breakPoints2}>
+            <Item>
+              <CardMedia
+                sx={classes.carosoul}
+                component="img"
+                image={'images/slider2.webp'}
+                title="ok"
+              ></CardMedia>
+            </Item>
+            <Item>
+              <CardMedia
+                sx={classes.carosoul}
+                component="img"
+                image={'images/slider2.webp'}
+                title="ok"
+              ></CardMedia>
+            </Item>
+            <Item>
+              <CardMedia
+                sx={classes.carosoul}
+                component="img"
+                image={'images/slider2.webp'}
+                title="ok"
+              ></CardMedia>
+            </Item>
+            <Item>
+              <CardMedia
+                sx={classes.carosoul}
+                component="img"
+                image={'images/slider2.webp'}
+                title="ok"
+              ></CardMedia>
+            </Item>
+            <Item>
+              <CardMedia
+                sx={classes.carosoul}
+                component="img"
+                image={'images/slider2.webp'}
+                title="ok"
+              ></CardMedia>
+            </Item>
+            <Item>
+              <CardMedia
+                sx={classes.carosoul}
+                component="img"
+                image={'images/slider2.webp'}
+                title="ok"
+              ></CardMedia>
+            </Item>
+            <Item>
+              <CardMedia
+                sx={classes.carosoul}
+                component="img"
+                image={'images/slider2.webp'}
+                title="ok"
+              ></CardMedia>
+            </Item>
+            <Item>
+              <CardMedia
+                sx={classes.carosoul}
+                component="img"
+                image={'images/slider2.webp'}
+                title="ok"
+              ></CardMedia>
+            </Item>
+          </Carousel>
+        </div>
       </Container>
 
       <Box component="footer" sx={classes.footer}>
