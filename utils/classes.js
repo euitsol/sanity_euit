@@ -1,4 +1,5 @@
 import { FullscreenExit } from '@mui/icons-material';
+import { width } from '@mui/system';
 
 const classes = {
   logo: {
@@ -77,6 +78,59 @@ const classes = {
       color: '#000000',
     },
   },
+
+
+  // wellcome_section
+
+  wellcome_section: {
+    paddingTop: '85px',
+  },
+  wellcome_text: {
+    color: '#3C6382',
+    fontFamily: '"Teko",Sans-serif',
+    fontSize: '18px',
+    fontWeight: '500',
+    textTransform: 'uppercase',
+    letterSpacing: '.5px',
+  },
+  Institute_name: {
+    color: '#3C6382',
+    fontFamily: ' "Montserrat",Sans-serif',
+    fontSize: '30px',
+    fontWeight: '700',
+    marginTop: '5px',
+    marginBottom: '25px',
+  },
+
+  europeanit_detale: {
+      textAlign: 'center',
+      color: '#000',
+      fontFamily: ' "Montserrat",Sans-serif',
+      fontSize: '16px',
+      fontWeight: '400',
+      lineHeight: '34px',
+      maxWidth: '500px',
+  },
+  delate_text_link: {
+    fontSize: '30px',
+    color: 'red',
+  },
+  
+
+ // slider-section
+//  carosoul: {
+//     width: '100%',
+//     height: '100vh',
+// },
+
+
+
+
+
+
+
 };
+
+
 
 export default classes;

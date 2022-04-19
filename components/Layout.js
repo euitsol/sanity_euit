@@ -135,7 +135,7 @@ export default function layout({ title, description, children }) {
               <CardMedia
                 sx={classes.carosoul}
                 component="img"
-                image={'images/slider2.webp'}
+                image={'images/slider1.webp'}
                 title="ok"
               ></CardMedia>
             </Item>
@@ -232,16 +232,16 @@ export default function layout({ title, description, children }) {
         </Box>
       </Container>
 
-      <Container component="main">
-        <Typography variant="h4" textAlign="center">
+      <Container component="main" sx={classes.wellcome_section} >
+        <Typography variant="h4" textAlign="center" sx={classes.wellcome_text} >
           Welcome To
         </Typography>
-        <Typography variant="h5" textAlign="center">
+        <Typography variant="h5" textAlign="center" sx={classes.Institute_name}>
           European IT Institute
         </Typography>
-        <Typography variant="p" textAlign="center">
+        <Typography variant="p" textAlign="center"  sx={classes.europeanit_detale}>
           European IT startedasdasdsad off as an IT and web-based solutions,
-          services and web design company in Ireland, Germany, and Bangladesh in
+          services and <a href='https://europeanit-inst.com/course/web-design/'>web design</a>  company in Ireland, Germany, and Bangladesh in
           2009. Over the years, European IT has delivered successful projects in
           multiple platforms to clients in the US, Canada, UK, Ireland, Norway,
           Belgium, Netherlands, Bangladesh, Australia to name a few countries.
@@ -249,11 +249,11 @@ export default function layout({ title, description, children }) {
           provide professional IT training along with IT Skill Enhancement
           Training Program with the outsourcing market for graduates in view to
           gain work that follows international standards and quality.
-          Additionally, European IT Institute offers training delivery solutions
+          Additionally,<a href='https://europeanit-inst.com/'sx={classes.delate_text_link}>European IT Institute</a> offers training delivery solutions
           to corporations, institutions, and individuals along with internship
           for graduates.
         </Typography>
-        <hr></hr>
+        {/* <hr></hr> */}
       </Container>
 
       <Container component="main" sx={classes.main}>
