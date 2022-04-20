@@ -257,6 +257,7 @@ export default function layout({ title, description, children }) {
         {/* <hr></hr> */}
       </Container>
 
+      <Container component="main" sx={classes.Courses_program}>
       <Container component="main" sx={classes.main}>
       <Typography variant="h4" textAlign="center" sx={classes.most_popular_text} >
         Most popular
@@ -266,6 +267,7 @@ export default function layout({ title, description, children }) {
         </Typography>
         {/* <hr></hr> */}
         {children}
+      </Container>
       </Container>
 
       <Container component="main"  sx={classes.facilities_section}>
@@ -404,7 +406,7 @@ export default function layout({ title, description, children }) {
           </Grid>
         </Box>
       </Container>
-      <Container>
+      <Container sx={classes. our_partners_section}>
         <Typography variant="h4" textAlign="center" sx={classes. our_partners_head}>
           Our Partners
         </Typography>

@@ -113,6 +113,15 @@ const classes = {
   },
 
   // Course Programs
+
+  // Courses_program: {
+
+  // }
+  Courses_program: {
+    padding: ' 0px 50px 80px 50px',
+  },
+ 
+
   most_popular_text: {
     color: '#3C6382',
     fontFamily: '"Teko",Sans-serif',
@@ -172,7 +181,9 @@ const classes = {
   },
 
   //our partners
-
+  our_partners_section: {
+    padding: '50px 50px 50px 50px',
+  },
    our_partners_head: {
     color: '#3C6382',
     fontFamily: ' "Montserrat",Sans-serif',
