@@ -189,14 +189,13 @@ const classes = {
     fontFamily: ' "Montserrat",Sans-serif',
     fontSize: '30px',
     fontWeight: '700',
-    marginBottom: '35px',
    },
   //  font-family: "Montserrat", Sans-serif;
   //  font-size: 16px;
   //  font-weight: 700;
   //  margin-bottom: 4px;
   //  color: #3C6382;
-
+  
 
 
 
