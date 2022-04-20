@@ -17,6 +17,7 @@ const classes = {
     minHeight: '80vh',
     marginTop: 10,
   },
+  
   carosoul: { width: '100%' },
   footer: {
     marginTop: 1,
@@ -80,12 +81,12 @@ const classes = {
   },
 
 
-  // wellcome_section
+  // welcome_section
 
-  wellcome_section: {
+  welcome_section: {
     paddingTop: '85px',
   },
-  wellcome_text: {
+  welcome_text: {
     color: '#3C6382',
     fontFamily: '"Teko",Sans-serif',
     fontSize: '18px',
@@ -102,28 +103,88 @@ const classes = {
     marginBottom: '25px',
   },
 
-  europeanit_detale: {
-      textAlign: 'center',
-      color: '#000',
-      fontFamily: ' "Montserrat",Sans-serif',
-      fontSize: '16px',
-      fontWeight: '400',
-      lineHeight: '34px',
-      maxWidth: '500px',
+  europeanit_detale:{
+    textAlign: 'center',
+    color: '#000',
+    fontSize: '16px',
+    fontWeight: '400',
+    fontFamily: '"Montserrat", Sans-serif',
+    lineHeight: '34px',
   },
-  delate_text_link: {
+
+  // Course Programs
+  most_popular_text: {
+    color: '#3C6382',
+    fontFamily: '"Teko",Sans-serif',
+    fontSize: '18px',
+    fontWeight: '500',
+    textTransform: 'uppercase',
+    letterSpacing: '.5px',
+  },
+
+  Our_Courses_text: {
+    color: '#3C6382',
+    fontFamily: ' "Montserrat",Sans-serif',
     fontSize: '30px',
-    color: 'red',
+    fontWeight: '700',
+    marginTop: '5px',
+    marginBottom: '35px',
   },
-  
 
- // slider-section
-//  carosoul: {
-//     width: '100%',
-//     height: '100vh',
-// },
+ 
+  // facilities_section
+  facilities_section: {
+    backgroundColor: '#F8F8F8',
+    padding: '100px 50px 50px 50px',
+    width: '100%',
+  },
+  europeanit_name: {
+    color: '#3C6382',
+    fontFamily: '"Teko",Sans-serif',
+    fontSize: '18px',
+    fontWeight: '500',
+    textTransform: 'uppercase',
+    letterSpacing: '.5px',
+  },
 
+  facilities_head_text: {
+    color: '#3C6382',
+    fontFamily: ' "Montserrat",Sans-serif',
+    fontSize: '30px',
+    fontWeight: '700',
+    marginTop: '5px',
+    marginBottom: '35px',
+  },
+  facilities_content_head: {
+    fontFamily: '"Montserrat", Sans-serif',
+    fontSize: '20px',
+    fontWeight: '700',
+    lineHeight: '34px',
+    color: '#3C6382',
+    marginBottom: '10px',
+  },
+  facilities_content_paragraph:{
+    color: '#000000',
+    fontFamily: '"Montserrat", Sans-serif',
+    fontSize: '16px',
+    fontWeight: '400',
+    lineHeight: '30px',
+  },
 
+  //our partners
+
+   our_partners_head: {
+    color: '#3C6382',
+    fontFamily: ' "Montserrat",Sans-serif',
+    fontSize: '30px',
+    fontWeight: '700',
+    marginBottom: '35px',
+   },
+  //  font-family: "Montserrat", Sans-serif;
+  //  font-size: 16px;
+  //  font-weight: 700;
+  //  margin-bottom: 4px;
+  //  color: #3C6382;
 
 
 
