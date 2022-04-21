@@ -184,20 +184,42 @@ const classes = {
   our_partners_section: {
     padding: '50px 50px 50px 50px',
   },
+
    our_partners_head: {
     color: '#3C6382',
     fontFamily: ' "Montserrat",Sans-serif',
     fontSize: '30px',
     fontWeight: '700',
+    marginBottom: '35px',
    },
-  //  font-family: "Montserrat", Sans-serif;
-  //  font-size: 16px;
-  //  font-weight: 700;
-  //  margin-bottom: 4px;
-  //  color: #3C6382;
+ 
   
+// slider after durationber
+courses_duration: {
+  color: ' #3C6382',
+    fontFamily: '"Montserrat", Sans-serif',
+    fontSize: '18px',
+    fontWeight: '500',
+    textAlign: 'center',
+    marginBottom: '0',
+},
+courses_tittle : {
+  color: ' #3C6382',
+    fontFamily: '"Montserrat", Sans-serif',
+    fontSize: '16px',
+    fontWeight: '700',
+    textAlign: 'center',
+},
 
+// carosoul_topber_slider : {
+//   width: '100%',
+//   height: '100vh',
+// },
 
+slide_after_icon : {
+  padding: '30px',
+  fontSize: '80px',
+}
 
 
 };
