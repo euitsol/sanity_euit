@@ -31,8 +31,8 @@ import Item from './Item';
 import styles from '../styles/carosoul.module.css';
 
 import { height } from '@mui/system';
-import { CenterFocusStrong, SupportAgent } from '@mui/icons-material';
-import { AccessTimeIcon } from '@mui/icons-material/AccessTime';
+import { SupportAgent } from '@mui/icons-material';
+// import { AccessTimeIcon } from '@mui/icons-material/AccessTime';
 const breakPoints = [{ width: 1, itemsToShow: 1 }];
 const breakPoints2 = [
   { width: 1, itemsToShow: 1 },
@@ -40,10 +40,9 @@ const breakPoints2 = [
   { width: 768, itemsToShow: 3 },
   { width: 1200, itemsToShow: 4 },
 ];
+// import  AccessTimeIcon from '@mui/icons-material/AccessTime';
+// import { red } from '@mui/material/colors';
 import SupportAgentIcon from '@mui/icons-material/SupportAgent';
- import  AccessTimeIcon from '@mui/icons-material/AccessTime';
-import { red } from '@mui/material/colors';
-
 export default function layout({ title, description, children }) {
   const theme = createTheme({
     components: {
@@ -68,7 +67,7 @@ export default function layout({ title, description, children }) {
     palette: {
       mode: 'light',
       primary: {
-        main: '#f0c000',
+      main: '#f0c000',
       },
       secondary: {
         main: '#208080',
@@ -174,16 +173,11 @@ export default function layout({ title, description, children }) {
                 {' '}
                 <Card sx={{ maxWidth: 345 }}>
                   <CardActionArea>
-                  
-                     <div className={styles.slide_after_icon}>
-                     <SupportAgentIcon  /> 
-                     </div>
                      <CardMedia
-                      
-                      // component="img"
-                      // height="140"
-                      // image="images/laptop-svgrepo-com.svg"
-                      // alt="green iguana"
+                      component="img"
+                      height="140"
+                      image="images/laptop-svgrepo-com.svg"
+                      alt="green iguana"
                     />
                     <CardContent>
                       <Typography gutterBottom variant="h5" component="div" sx={classes.courses_duration}>
