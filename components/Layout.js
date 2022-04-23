@@ -32,6 +32,9 @@ import styles from '../styles/carosoul.module.css';
 
 import { height } from '@mui/system';
 import { SupportAgent } from '@mui/icons-material';
+import GroupsIcon from '@mui/icons-material/Groups';
+import LaptopIcon from '@mui/icons-material/Laptop';
+import HailIcon from '@mui/icons-material/Hail';
 // import { AccessTimeIcon } from '@mui/icons-material/AccessTime';
 const breakPoints = [{ width: 1, itemsToShow: 1 }];
 const breakPoints2 = [
@@ -134,14 +137,14 @@ export default function layout({ title, description, children }) {
       </AppBar>
 
       <div className={styles.carosoul_topber_slider}>
-      <Container>
+      
         <div className={styles.carosoul}>
           <Carousel breakPoints={breakPoints}>
             <Item>
               <CardMedia
                 sx={classes.carosoul}
                 component="img"
-                image={'images/website-banner-Boishakhi-.png'}
+                image={'images/slider-image.png'}
                 title="ok"
               ></CardMedia>
             </Item>
@@ -155,16 +158,16 @@ export default function layout({ title, description, children }) {
             </Item>
             <Item>
               <CardMedia
-                sx={classes.carosoul}
+                sx={classes.carosoul} 
                 component="img"
                 image={'images/website-banner-Boishakhi-.png'}
                 title="ok"
-              ></CardMedia>
+               ></CardMedia>
             </Item>
           </Carousel>
         </div>
-      </Container>
-      </div>
+        </div>
+      
       <Container component="main">
         <Box sx={{ flexGrow: 1 }} className={styles.slide_after}>
           <Grid container spacing={2}>
@@ -173,11 +176,12 @@ export default function layout({ title, description, children }) {
                 {' '}
                 <Card sx={{ maxWidth: 345 }}>
                   <CardActionArea>
+                    <HailIcon   sx={classes.courses_icon}/>
                      <CardMedia
-                      component="img"
-                      height="140"
-                      image="images/laptop-svgrepo-com.svg"
-                      alt="green iguana"
+                      // component="img"
+                      // height="140"
+                      // image="images/laptop-svgrepo-com.svg"
+                      // alt="green iguana"
                     />
                     <CardContent>
                       <Typography gutterBottom variant="h5" component="div" sx={classes.courses_duration}>
@@ -195,11 +199,12 @@ export default function layout({ title, description, children }) {
               <Item>
                 <Card sx={{ maxWidth: 345 }}>
                   <CardActionArea>
+                    < GroupsIcon  sx={classes.courses_icon}/>
                     <CardMedia
-                      component="img"
-                      height="140"
-                      image="images/laptop-svgrepo-com.svg"
-                      alt="green iguana"
+                      // component="img"
+                      // height="140"
+                      // image="images/laptop-svgrepo-com.svg"
+                      // alt="green iguana"
                     />
                     <CardContent>
                       <Typography gutterBottom variant="h5" component="div" sx={classes.courses_duration}>
@@ -217,12 +222,13 @@ export default function layout({ title, description, children }) {
               <Item>
                 <Card sx={{ maxWidth: 345 }}>
                   <CardActionArea>
-                    <CardMedia
-                      component="img"
-                      height="140"
-                      image="images/slider1.webp"
-                      alt="green iguana"
-                    />
+                 < LaptopIcon sx={classes.courses_icon} />
+                     <CardMedia
+                      // component="img"
+                      // height="140"
+                      // image="images/slider1.webp"
+                      // alt="green iguana"
+                    /> 
                     <CardContent>
                       <Typography gutterBottom variant="h5" component="div" sx={classes.courses_duration}>
                         Free
@@ -486,8 +492,10 @@ export default function layout({ title, description, children }) {
         </div>
       </Container>
 
-      <Box component="footer" sx={classes.footer}>
-        <Typography>All right reserved. Sanity Euit</Typography>
+      <Box component="footer" sx={classes.footer_section}>
+       <Container>
+       <Typography  sx={classes.footer_text}>All right reserved. Sanity Euit</Typography>
+       </Container>
       </Box>
     </>
   );

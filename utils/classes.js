@@ -1,5 +1,5 @@
 import { FullscreenExit } from '@mui/icons-material';
-import { width } from '@mui/system';
+import { textAlign, width } from '@mui/system';
 
 const classes = {
   logo: {
@@ -80,6 +80,11 @@ const classes = {
     },
   },
 
+  // slider_section
+  eAyARa:{
+    position: 'absolute',
+    right: '0',
+  },
 
   // welcome_section
 
@@ -114,9 +119,7 @@ const classes = {
 
   // Course Programs
 
-  // Courses_program: {
-
-  // }
+  
   Courses_program: {
     padding: ' 0px 50px 80px 50px',
   },
@@ -196,12 +199,13 @@ const classes = {
   
 // slider after durationber
  courses_duration: {
+      textAlign: 'center',
+      marginBottom: '0',
+      fontWeight: '500',
       color: ' #3C6382',
       fontFamily: '"Montserrat", Sans-serif',
       fontSize: '18px'
-        // textAlign: 'center', 
-        // marginBottom: '0',
-        // fontWeight: '500',
+       
  },
 courses_tittle : {
     color: ' #3C6382',
@@ -210,7 +214,31 @@ courses_tittle : {
     fontWeight: '700',
     textAlign: 'center',
 },
+courses_icon :{
+  fontSize: '36px',
+  color: '#00AEEF;',
+   border: '1px solid #e1e8ea',
+   borderRadius: '50%',
+  //  padding: '25px',
+  textAlign: 'center',
+},
 
+// footer_section
+
+footer_section :{
+  backgroundColor: '#C8D6E5',
+  padding: '20px 30px 20px 30px',
+},
+
+footer_text : {
+  fontSize: '14px',
+  color: '#3C6382',
+   textAlign: 'center',
+    fontFamily: '"Montserrat", Sans-serif',
+    fontWeight: '500',
+    fontStyle: 'normal',
+    lineHeight: '18px',
+},
 
 };
 
