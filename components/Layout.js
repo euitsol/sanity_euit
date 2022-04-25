@@ -38,6 +38,7 @@ const breakPoints2 = [
   { width: 768, itemsToShow: 3 },
   { width: 1200, itemsToShow: 4 },
 ];
+// const [value, setValue] = React.useState(0);
 import SupportAgentIcon from '@mui/icons-material/SupportAgent';
 export default function layout({ title, description, children }) {
   const theme = createTheme({
@@ -70,6 +71,7 @@ export default function layout({ title, description, children }) {
       },
     },
   });
+
   return (
     <>
       <Head>
@@ -95,9 +97,15 @@ export default function layout({ title, description, children }) {
             alt="Your logo."
             src={logo}
           /> */}
-
+          {/* Menu header Section */}
           <Container>
-            <Tabs textColor="inherit" sx={classes.tabs}>
+            <Tabs
+              textColor="inherit"
+              sx={classes.tabs}
+              // value={value}
+              // onChange={(e, value) => setValue(value)}
+              // indicatorColor="secondary"
+            >
               <NextLink href="/" passHref>
                 <Tab label="Home"></Tab>
               </NextLink>
@@ -128,6 +136,7 @@ export default function layout({ title, description, children }) {
           </NextLink> */}
         </Toolbar>
       </AppBar>
+      {/* Slider Section */}
       <Container>
         <div className={styles.carosoul}>
           <Carousel breakPoints={breakPoints}>
@@ -158,6 +167,7 @@ export default function layout({ title, description, children }) {
           </Carousel>
         </div>
       </Container>
+      {/* Below Slider Section */}
       <Container component="main">
         <Box sx={{ flexGrow: 1 }} className={styles.slide_after}>
           <Grid container spacing={2}>
@@ -231,7 +241,7 @@ export default function layout({ title, description, children }) {
           </Grid>
         </Box>
       </Container>
-
+      {/* Welcom  Section */}
       <Container component="main">
         <Typography variant="h4" textAlign="center">
           Welcome To
@@ -255,7 +265,7 @@ export default function layout({ title, description, children }) {
         </Typography>
         <hr></hr>
       </Container>
-
+      {/* Our Courses  Section */}
       <Container component="main" sx={classes.main}>
         <Typography variant="h3" textAlign="center">
           Our Courses
@@ -263,7 +273,7 @@ export default function layout({ title, description, children }) {
         <hr></hr>
         {children}
       </Container>
-
+      {/* Our Facility  Section */}
       <Container component="main">
         <Typography variant="h6" textAlign="center">
           European IT
@@ -400,6 +410,7 @@ export default function layout({ title, description, children }) {
           </Grid>
         </Box>
       </Container>
+      {/* Our Partnet Section */}
       <Container>
         <Typography variant="h4" textAlign="center">
           Our Partners
@@ -472,6 +483,70 @@ export default function layout({ title, description, children }) {
             </Item>
           </Carousel>
         </div>
+      </Container>
+      <Container component="main">
+        <Typography variant="h6" textAlign="center">
+          European IT
+        </Typography>
+        <Typography variant="h5" textAlign="center">
+          Facilities
+        </Typography>
+        <Box sx={{ flexGrow: 1 }}>
+          <Grid container spacing={2}>
+            <Grid item xs={6} md={6}>
+              <Item sx={{ background: 'white' }}>
+                {' '}
+                <Card>
+                  <CardActionArea>
+                    {/* <SupportAgentIcon sx={{ fontSize: 40 }} /> */}
+
+                    <CardContent>
+                      <Typography variant="h4" color="text.secondary">
+                        JOB Placement
+                      </Typography>
+                      <Typography gutterBottom variant="h5" component="div">
+                        European IT manage the job for talented students through
+                        their job placement cell at European IT's firm as well
+                        as other firms. I was a student of Pabna Polytechnic
+                        Institute. I have completed my industrial attachment
+                        from European IT Institute in 2019. From my childhood, I
+                        was very much interested in Graphic Design Sector. For
+                        that, I have chosen the subject for industrial
+                        attachment Graphic Design. It was an awesome experience
+                        when I was a student of European IT. The Instructor of
+                        this Institute always supported us. After completed my
+                        industrial attachment I got a job opportunity from the
+                        European IT firm. Not only me but also some of my
+                        friends had got the opportunity.
+                      </Typography>
+                      <Typography variant="p" color="text.secondary">
+                        Mst Rukiea Khatun
+                      </Typography>
+                      <Typography variant="p" color="text.secondary">
+                        Graphic Designer
+                      </Typography>
+                    </CardContent>
+                  </CardActionArea>
+                </Card>
+              </Item>
+            </Grid>
+            <Grid item xs={6} md={6}>
+              <Item>
+                <div className="video-responsive">
+                  <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/E5hw1IdtpV8"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+              </Item>
+            </Grid>
+          </Grid>
+        </Box>
       </Container>
 
       <Box component="footer" sx={classes.footer}>
