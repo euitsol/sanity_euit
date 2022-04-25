@@ -1,4 +1,5 @@
 import { FullscreenExit } from '@mui/icons-material';
+import { textAlign, width } from '@mui/system';
 
 const classes = {
   logo: {
@@ -16,6 +17,7 @@ const classes = {
     minHeight: '80vh',
     marginTop: 10,
   },
+  
   carosoul: { width: '100%' },
   footer: {
     marginTop: 1,
@@ -77,6 +79,169 @@ const classes = {
       color: '#000000',
     },
   },
+
+  // slider_section
+  eAyARa:{
+    position: 'absolute',
+    right: '0',
+  },
+
+  // welcome_section
+
+  welcome_section: {
+    paddingTop: '85px',
+  },
+  welcome_text: {
+    color: '#3C6382',
+    fontFamily: '"Teko",Sans-serif',
+    fontSize: '18px',
+    fontWeight: '500',
+    textTransform: 'uppercase',
+    letterSpacing: '.5px',
+  },
+  Institute_name: {
+    color: '#3C6382',
+    fontFamily: ' "Montserrat",Sans-serif',
+    fontSize: '30px',
+    fontWeight: '700',
+    marginTop: '5px',
+    marginBottom: '25px',
+  },
+
+  europeanit_detale:{
+    textAlign: 'center',
+    color: '#000',
+    fontSize: '16px',
+    fontWeight: '400',
+    fontFamily: '"Montserrat", Sans-serif',
+    lineHeight: '34px',
+  },
+
+  // Course Programs
+
+  
+  Courses_program: {
+    padding: ' 0px 50px 80px 50px',
+  },
+ 
+
+  most_popular_text: {
+    color: '#3C6382',
+    fontFamily: '"Teko",Sans-serif',
+    fontSize: '18px',
+    fontWeight: '500',
+    textTransform: 'uppercase',
+    letterSpacing: '.5px',
+  },
+
+  Our_Courses_text: {
+    color: '#3C6382',
+    fontFamily: ' "Montserrat",Sans-serif',
+    fontSize: '30px',
+    fontWeight: '700',
+    marginTop: '5px',
+    marginBottom: '35px',
+  },
+
+ 
+  // facilities_section
+  facilities_section: {
+    backgroundColor: '#F8F8F8',
+    padding: '100px 50px 50px 50px',
+    width: '100%',
+  },
+  europeanit_name: {
+    color: '#3C6382',
+    fontFamily: '"Teko",Sans-serif',
+    fontSize: '18px',
+    fontWeight: '500',
+    textTransform: 'uppercase',
+    letterSpacing: '.5px',
+  },
+
+  facilities_head_text: {
+    color: '#3C6382',
+    fontFamily: ' "Montserrat",Sans-serif',
+    fontSize: '30px',
+    fontWeight: '700',
+    marginTop: '5px',
+    marginBottom: '35px',
+  },
+  facilities_content_head: {
+    fontFamily: '"Montserrat", Sans-serif',
+    fontSize: '20px',
+    fontWeight: '700',
+    lineHeight: '34px',
+    color: '#3C6382',
+    marginBottom: '10px',
+  },
+  facilities_content_paragraph:{
+    color: '#000000',
+    fontFamily: '"Montserrat", Sans-serif',
+    fontSize: '16px',
+    fontWeight: '400',
+    lineHeight: '30px',
+  },
+
+  //our partners
+  our_partners_section: {
+    padding: '50px 50px 50px 50px',
+  },
+
+   our_partners_head: {
+    color: '#3C6382',
+    fontFamily: ' "Montserrat",Sans-serif',
+    fontSize: '30px',
+    fontWeight: '700',
+    marginBottom: '35px',
+   },
+ 
+  
+// slider after durationber
+ courses_duration: {
+      textAlign: 'center',
+      marginBottom: '0',
+      fontWeight: '500',
+      color: ' #3C6382',
+      fontFamily: '"Montserrat", Sans-serif',
+      fontSize: '18px'
+       
+ },
+courses_tittle : {
+    color: ' #3C6382',
+    fontFamily: '"Montserrat", Sans-serif',
+    fontSize: '16px',
+    fontWeight: '700',
+    textAlign: 'center',
+},
+courses_icon :{
+  fontSize: '36px',
+  color: '#00AEEF;',
+   border: '1px solid #e1e8ea',
+   borderRadius: '50%',
+  //  padding: '25px',
+  textAlign: 'center',
+},
+
+// footer_section
+
+footer_section :{
+  backgroundColor: '#C8D6E5',
+  padding: '20px 30px 20px 30px',
+},
+
+footer_text : {
+  fontSize: '14px',
+  color: '#3C6382',
+   textAlign: 'center',
+    fontFamily: '"Montserrat", Sans-serif',
+    fontWeight: '500',
+    fontStyle: 'normal',
+    lineHeight: '18px',
+},
+
 };
+
+
 
 export default classes;

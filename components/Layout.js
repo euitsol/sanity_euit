@@ -29,8 +29,13 @@ import classes from '../utils/classes';
 import Carousel from 'react-elastic-carousel';
 import Item from './Item';
 import styles from '../styles/carosoul.module.css';
+
 import { height } from '@mui/system';
 import { SupportAgent } from '@mui/icons-material';
+import GroupsIcon from '@mui/icons-material/Groups';
+import LaptopIcon from '@mui/icons-material/Laptop';
+import HailIcon from '@mui/icons-material/Hail';
+// import { AccessTimeIcon } from '@mui/icons-material/AccessTime';
 const breakPoints = [{ width: 1, itemsToShow: 1 }];
 const breakPoints2 = [
   { width: 1, itemsToShow: 1 },
@@ -38,7 +43,12 @@ const breakPoints2 = [
   { width: 768, itemsToShow: 3 },
   { width: 1200, itemsToShow: 4 },
 ];
+<<<<<<< HEAD
 // const [value, setValue] = React.useState(0);
+=======
+// import  AccessTimeIcon from '@mui/icons-material/AccessTime';
+// import { red } from '@mui/material/colors';
+>>>>>>> d8c1ea81e0605cc8ab38d993f5b8749e0ce15f56
 import SupportAgentIcon from '@mui/icons-material/SupportAgent';
 export default function layout({ title, description, children }) {
   const theme = createTheme({
@@ -64,7 +74,7 @@ export default function layout({ title, description, children }) {
     palette: {
       mode: 'light',
       primary: {
-        main: '#f0c000',
+      main: '#f0c000',
       },
       secondary: {
         main: '#208080',
@@ -136,15 +146,21 @@ export default function layout({ title, description, children }) {
           </NextLink> */}
         </Toolbar>
       </AppBar>
+<<<<<<< HEAD
       {/* Slider Section */}
       <Container>
+=======
+
+      <div className={styles.carosoul_topber_slider}>
+      
+>>>>>>> d8c1ea81e0605cc8ab38d993f5b8749e0ce15f56
         <div className={styles.carosoul}>
           <Carousel breakPoints={breakPoints}>
             <Item>
               <CardMedia
                 sx={classes.carosoul}
                 component="img"
-                image={'images/slider2.webp'}
+                image={'images/slider-image.png'}
                 title="ok"
               ></CardMedia>
             </Item>
@@ -152,22 +168,27 @@ export default function layout({ title, description, children }) {
               <CardMedia
                 sx={classes.carosoul}
                 component="img"
-                image={'images/slider2.webp'}
+                image={'images/website-banner-Boishakhi-.png'}
                 title="ok"
               ></CardMedia>
             </Item>
             <Item>
               <CardMedia
-                sx={classes.carosoul}
+                sx={classes.carosoul} 
                 component="img"
-                image={'images/slider2.webp'}
+                image={'images/website-banner-Boishakhi-.png'}
                 title="ok"
-              ></CardMedia>
+               ></CardMedia>
             </Item>
           </Carousel>
         </div>
+<<<<<<< HEAD
       </Container>
       {/* Below Slider Section */}
+=======
+        </div>
+      
+>>>>>>> d8c1ea81e0605cc8ab38d993f5b8749e0ce15f56
       <Container component="main">
         <Box sx={{ flexGrow: 1 }} className={styles.slide_after}>
           <Grid container spacing={2}>
@@ -176,17 +197,18 @@ export default function layout({ title, description, children }) {
                 {' '}
                 <Card sx={{ maxWidth: 345 }}>
                   <CardActionArea>
-                    <CardMedia
-                      component="img"
-                      height="140"
-                      image="images/slider1.webp"
-                      alt="green iguana"
+                    <HailIcon   sx={classes.courses_icon}/>
+                     <CardMedia
+                      // component="img"
+                      // height="140"
+                      // image="images/laptop-svgrepo-com.svg"
+                      // alt="green iguana"
                     />
                     <CardContent>
-                      <Typography gutterBottom variant="h5" component="div">
+                      <Typography gutterBottom variant="h5" component="div" sx={classes.courses_duration}>
                         6 Months/1 Year
                       </Typography>
-                      <Typography variant="body2" color="text.secondary">
+                      <Typography variant="body2" color="text.secondary" sx={classes.courses_tittle}>
                         For Seminar
                       </Typography>
                     </CardContent>
@@ -198,17 +220,18 @@ export default function layout({ title, description, children }) {
               <Item>
                 <Card sx={{ maxWidth: 345 }}>
                   <CardActionArea>
+                    < GroupsIcon  sx={classes.courses_icon}/>
                     <CardMedia
-                      component="img"
-                      height="140"
-                      image="images/slider1.webp"
-                      alt="green iguana"
+                      // component="img"
+                      // height="140"
+                      // image="images/laptop-svgrepo-com.svg"
+                      // alt="green iguana"
                     />
                     <CardContent>
-                      <Typography gutterBottom variant="h5" component="div">
+                      <Typography gutterBottom variant="h5" component="div" sx={classes.courses_duration}>
                         Apply for
                       </Typography>
-                      <Typography variant="body2" color="text.secondary">
+                      <Typography variant="body2" color="text.secondary" sx={classes.courses_tittle}>
                         Online Tutorials
                       </Typography>
                     </CardContent>
@@ -220,17 +243,18 @@ export default function layout({ title, description, children }) {
               <Item>
                 <Card sx={{ maxWidth: 345 }}>
                   <CardActionArea>
-                    <CardMedia
-                      component="img"
-                      height="140"
-                      image="images/slider1.webp"
-                      alt="green iguana"
-                    />
+                 < LaptopIcon sx={classes.courses_icon} />
+                     <CardMedia
+                      // component="img"
+                      // height="140"
+                      // image="images/slider1.webp"
+                      // alt="green iguana"
+                    /> 
                     <CardContent>
-                      <Typography gutterBottom variant="h5" component="div">
+                      <Typography gutterBottom variant="h5" component="div" sx={classes.courses_duration}>
                         Free
                       </Typography>
-                      <Typography variant="body2" color="text.secondary">
+                      <Typography variant="body2" color="text.secondary"sx={classes.courses_tittle}>
                         New Courses
                       </Typography>
                     </CardContent>
@@ -241,17 +265,23 @@ export default function layout({ title, description, children }) {
           </Grid>
         </Box>
       </Container>
+<<<<<<< HEAD
       {/* Welcom  Section */}
       <Container component="main">
         <Typography variant="h4" textAlign="center">
+=======
+
+      <Container component="main" sx={classes.welcome_section} >
+        <Typography variant="h4" textAlign="center" sx={classes.welcome_text} >
+>>>>>>> d8c1ea81e0605cc8ab38d993f5b8749e0ce15f56
           Welcome To
         </Typography>
-        <Typography variant="h5" textAlign="center">
+        <Typography variant="h5" textAlign="center" sx={classes.Institute_name}>
           European IT Institute
         </Typography>
-        <Typography variant="p" textAlign="center">
+        <Typography variant="p" textAlign="center"  sx={classes.europeanit_detale}>
           European IT startedasdasdsad off as an IT and web-based solutions,
-          services and web design company in Ireland, Germany, and Bangladesh in
+          services and <a href='https://europeanit-inst.com/course/web-design/'>web design</a>  company in Ireland, Germany, and Bangladesh in
           2009. Over the years, European IT has delivered successful projects in
           multiple platforms to clients in the US, Canada, UK, Ireland, Norway,
           Belgium, Netherlands, Bangladesh, Australia to name a few countries.
@@ -259,26 +289,41 @@ export default function layout({ title, description, children }) {
           provide professional IT training along with IT Skill Enhancement
           Training Program with the outsourcing market for graduates in view to
           gain work that follows international standards and quality.
-          Additionally, European IT Institute offers training delivery solutions
+          Additionally,<a href='https://europeanit-inst.com/'sx={classes.delate_text_link}>European IT Institute</a> offers training delivery solutions
           to corporations, institutions, and individuals along with internship
           for graduates.
         </Typography>
-        <hr></hr>
+        {/* <hr></hr> */}
       </Container>
+<<<<<<< HEAD
       {/* Our Courses  Section */}
+=======
+
+      <Container component="main" sx={classes.Courses_program}>
+>>>>>>> d8c1ea81e0605cc8ab38d993f5b8749e0ce15f56
       <Container component="main" sx={classes.main}>
-        <Typography variant="h3" textAlign="center">
+      <Typography variant="h4" textAlign="center" sx={classes.most_popular_text} >
+        Most popular
+        </Typography>
+        <Typography variant="h3" textAlign="center" sx={classes.Our_Courses_text}>
           Our Courses
         </Typography>
-        <hr></hr>
+        {/* <hr></hr> */}
         {children}
       </Container>
+<<<<<<< HEAD
       {/* Our Facility  Section */}
       <Container component="main">
         <Typography variant="h6" textAlign="center">
+=======
+      </Container>
+
+      <Container component="main"  sx={classes.facilities_section}>
+        <Typography variant="h6" textAlign="center" sx={classes.europeanit_name} >
+>>>>>>> d8c1ea81e0605cc8ab38d993f5b8749e0ce15f56
           European IT
         </Typography>
-        <Typography variant="h5" textAlign="center">
+        <Typography variant="h5" textAlign="center" sx={classes.facilities_head_text}>
           Facilities
         </Typography>
         <Box sx={{ flexGrow: 1 }}>
@@ -291,12 +336,12 @@ export default function layout({ title, description, children }) {
                     <SupportAgentIcon sx={{ fontSize: 40 }} />
 
                     <CardContent>
-                      <Typography gutterBottom variant="h5" component="div">
+                      <Typography gutterBottom variant="h5" component="div" sx={classes.facilities_content_head}>
                         24/7 Online Support
                       </Typography>
-                      <Typography variant="p" color="text.secondary">
+                      <Typography variant="p" color="text.secondary" sx={classes.facilities_content_paragraph}>
                         Each time is very important to us. European IT is giving
-                        24/7 online support for the students for any information
+                        24/7 <a href="#">online support</a> for the students for any information
                         review and solving problem.
                       </Typography>
                     </CardContent>
@@ -311,10 +356,10 @@ export default function layout({ title, description, children }) {
                     <SupportAgentIcon sx={{ fontSize: 40 }} />
 
                     <CardContent>
-                      <Typography gutterBottom variant="h5" component="div">
+                      <Typography gutterBottom variant="h5" component="div" sx={classes.facilities_content_head}>
                         Lifetime Support
                       </Typography>
-                      <Typography variant="p" color="text.secondary">
+                      <Typography variant="p" color="text.secondary" sx={classes.facilities_content_paragraph}>
                         By the end of the course, European IT provides life time
                         support to its students for problem solving and
                         collaborate.
@@ -331,10 +376,10 @@ export default function layout({ title, description, children }) {
                     <SupportAgentIcon sx={{ fontSize: 40 }} />
 
                     <CardContent>
-                      <Typography gutterBottom variant="h5" component="div">
+                      <Typography gutterBottom variant="h5" component="div" sx={classes.facilities_content_head}>
                         Practice Lab Support
                       </Typography>
-                      <Typography variant="p" color="text.secondary">
+                      <Typography variant="p" color="text.secondary" sx={classes.facilities_content_paragraph}>
                         European IT is giving students a practice lab at the end
                         of classes or at any time to practice. Where students
                         will have the opportunity to practice for a long time.
@@ -354,11 +399,11 @@ export default function layout({ title, description, children }) {
                     <SupportAgentIcon sx={{ fontSize: 40 }} />
 
                     <CardContent>
-                      <Typography gutterBottom variant="h5" component="div">
+                      <Typography gutterBottom variant="h5" component="div" sx={classes.facilities_content_head}>
                         Class Video
                       </Typography>
-                      <Typography variant="p" color="text.secondary">
-                        Video for each class of European IT Institute is stored
+                      <Typography variant="p" color="text.secondary" sx={classes.facilities_content_paragraph}>
+                        <a href="#">Video</a> for each class of European IT Institute is stored
                         and provided to students. This will allow students to
                         better understand the contents of the class.
                       </Typography>
@@ -374,10 +419,10 @@ export default function layout({ title, description, children }) {
                     <SupportAgentIcon sx={{ fontSize: 40 }} />
 
                     <CardContent>
-                      <Typography gutterBottom variant="h5" component="div">
+                      <Typography gutterBottom variant="h5" component="div" sx={classes.facilities_content_head}>
                         Job Placement
                       </Typography>
-                      <Typography variant="p" color="text.secondary">
+                      <Typography variant="p" color="text.secondary" sx={classes.facilities_content_paragraph}>
                         European IT manage job for talented students through
                         their job placement cell at European IT own firm as well
                         as other firms.
@@ -394,11 +439,11 @@ export default function layout({ title, description, children }) {
                     <SupportAgentIcon sx={{ fontSize: 40 }} />
 
                     <CardContent>
-                      <Typography gutterBottom variant="h5" component="div">
+                      <Typography gutterBottom variant="h5" component="div" sx={classes.facilities_content_head}>
                         Job Placement
                       </Typography>
-                      <Typography variant="p" color="text.secondary">
-                        European IT manage job for talented students through
+                      <Typography variant="p" color="text.secondary" sx={classes.facilities_content_paragraph}>
+                        European IT manage job for talented <a href='#'>students</a> through
                         their job placement cell at European IT own firm as well
                         as other firms.
                       </Typography>
@@ -410,9 +455,14 @@ export default function layout({ title, description, children }) {
           </Grid>
         </Box>
       </Container>
+<<<<<<< HEAD
       {/* Our Partnet Section */}
       <Container>
         <Typography variant="h4" textAlign="center">
+=======
+      <Container sx={classes. our_partners_section}>
+        <Typography variant="h4" textAlign="center" sx={classes. our_partners_head}>
+>>>>>>> d8c1ea81e0605cc8ab38d993f5b8749e0ce15f56
           Our Partners
         </Typography>
         <div className={styles.carosoul}>
@@ -549,8 +599,10 @@ export default function layout({ title, description, children }) {
         </Box>
       </Container>
 
-      <Box component="footer" sx={classes.footer}>
-        <Typography>All right reserved. Sanity Euit</Typography>
+      <Box component="footer" sx={classes.footer_section}>
+       <Container>
+       <Typography  sx={classes.footer_text}>All right reserved. Sanity Euit</Typography>
+       </Container>
       </Box>
     </>
   );
