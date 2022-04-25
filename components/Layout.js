@@ -43,12 +43,7 @@ const breakPoints2 = [
   { width: 768, itemsToShow: 3 },
   { width: 1200, itemsToShow: 4 },
 ];
-<<<<<<< HEAD
 // const [value, setValue] = React.useState(0);
-=======
-// import  AccessTimeIcon from '@mui/icons-material/AccessTime';
-// import { red } from '@mui/material/colors';
->>>>>>> d8c1ea81e0605cc8ab38d993f5b8749e0ce15f56
 import SupportAgentIcon from '@mui/icons-material/SupportAgent';
 export default function layout({ title, description, children }) {
   const theme = createTheme({
@@ -146,14 +141,8 @@ export default function layout({ title, description, children }) {
           </NextLink> */}
         </Toolbar>
       </AppBar>
-<<<<<<< HEAD
       {/* Slider Section */}
       <Container>
-=======
-
-      <div className={styles.carosoul_topber_slider}>
-      
->>>>>>> d8c1ea81e0605cc8ab38d993f5b8749e0ce15f56
         <div className={styles.carosoul}>
           <Carousel breakPoints={breakPoints}>
             <Item>
@@ -182,13 +171,8 @@ export default function layout({ title, description, children }) {
             </Item>
           </Carousel>
         </div>
-<<<<<<< HEAD
       </Container>
       {/* Below Slider Section */}
-=======
-        </div>
-      
->>>>>>> d8c1ea81e0605cc8ab38d993f5b8749e0ce15f56
       <Container component="main">
         <Box sx={{ flexGrow: 1 }} className={styles.slide_after}>
           <Grid container spacing={2}>
@@ -265,15 +249,9 @@ export default function layout({ title, description, children }) {
           </Grid>
         </Box>
       </Container>
-<<<<<<< HEAD
       {/* Welcom  Section */}
       <Container component="main">
         <Typography variant="h4" textAlign="center">
-=======
-
-      <Container component="main" sx={classes.welcome_section} >
-        <Typography variant="h4" textAlign="center" sx={classes.welcome_text} >
->>>>>>> d8c1ea81e0605cc8ab38d993f5b8749e0ce15f56
           Welcome To
         </Typography>
         <Typography variant="h5" textAlign="center" sx={classes.Institute_name}>
@@ -295,12 +273,7 @@ export default function layout({ title, description, children }) {
         </Typography>
         {/* <hr></hr> */}
       </Container>
-<<<<<<< HEAD
       {/* Our Courses  Section */}
-=======
-
-      <Container component="main" sx={classes.Courses_program}>
->>>>>>> d8c1ea81e0605cc8ab38d993f5b8749e0ce15f56
       <Container component="main" sx={classes.main}>
       <Typography variant="h4" textAlign="center" sx={classes.most_popular_text} >
         Most popular
@@ -311,16 +284,9 @@ export default function layout({ title, description, children }) {
         {/* <hr></hr> */}
         {children}
       </Container>
-<<<<<<< HEAD
       {/* Our Facility  Section */}
       <Container component="main">
         <Typography variant="h6" textAlign="center">
-=======
-      </Container>
-
-      <Container component="main"  sx={classes.facilities_section}>
-        <Typography variant="h6" textAlign="center" sx={classes.europeanit_name} >
->>>>>>> d8c1ea81e0605cc8ab38d993f5b8749e0ce15f56
           European IT
         </Typography>
         <Typography variant="h5" textAlign="center" sx={classes.facilities_head_text}>
@@ -455,14 +421,9 @@ export default function layout({ title, description, children }) {
           </Grid>
         </Box>
       </Container>
-<<<<<<< HEAD
       {/* Our Partnet Section */}
       <Container>
         <Typography variant="h4" textAlign="center">
-=======
-      <Container sx={classes. our_partners_section}>
-        <Typography variant="h4" textAlign="center" sx={classes. our_partners_head}>
->>>>>>> d8c1ea81e0605cc8ab38d993f5b8749e0ce15f56
           Our Partners
         </Typography>
         <div className={styles.carosoul}>
@@ -588,9 +549,9 @@ export default function layout({ title, description, children }) {
                     height="315"
                     src="https://www.youtube.com/embed/E5hw1IdtpV8"
                     title="YouTube video player"
-                    frameborder="0"
+                    // frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
+                    // allowfullscreen
                   ></iframe>
                 </div>
               </Item>
