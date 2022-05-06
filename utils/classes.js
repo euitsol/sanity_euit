@@ -118,13 +118,10 @@ const classes = {
   },
 
   // Course Programs
-
-  
-  Courses_program: {
-    padding: ' 0px 50px 80px 50px',
+  Our_Courses_Section:{
+    padding: ' 82px 0 80px 0',
   },
- 
-
+  
   most_popular_text: {
     color: '#3C6382',
     fontFamily: '"Teko",Sans-serif',
@@ -141,14 +138,15 @@ const classes = {
     fontWeight: '700',
     marginTop: '5px',
     marginBottom: '35px',
+
   },
 
  
   // facilities_section
   facilities_section: {
     backgroundColor: '#F8F8F8',
-    padding: '100px 50px 50px 50px',
-    width: '100%',
+    padding: '95px 50px 50px 50px',
+    
   },
   europeanit_name: {
     color: '#3C6382',
@@ -204,8 +202,8 @@ const classes = {
       fontWeight: '500',
       color: ' #3C6382',
       fontFamily: '"Montserrat", Sans-serif',
-      fontSize: '18px'
-       
+      fontSize: '18px',
+      
  },
 courses_tittle : {
     color: ' #3C6382',
@@ -213,14 +211,19 @@ courses_tittle : {
     fontSize: '16px',
     fontWeight: '700',
     textAlign: 'center',
+
+},
+commone_iconclass: {
+  textAlign: 'center',
+  padding: '37px 0 15px 0',
 },
 courses_icon :{
   fontSize: '36px',
   color: '#00AEEF;',
-   border: '1px solid #e1e8ea',
-   borderRadius: '50%',
-  //  padding: '25px',
-  textAlign: 'center',
+  border: '1px solid #e1e8ea',
+  borderRadius: '50%',
+  width: '70px',
+  minHeight: '70px',
 },
 
 // footer_section
@@ -228,6 +231,7 @@ courses_icon :{
 footer_section :{
   backgroundColor: '#C8D6E5',
   padding: '20px 30px 20px 30px',
+  
 },
 
 footer_text : {

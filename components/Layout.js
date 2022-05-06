@@ -30,7 +30,7 @@ import Carousel from 'react-elastic-carousel';
 import Item from './Item';
 import styles from '../styles/carosoul.module.css';
 
-import { height } from '@mui/system';
+import { height, textAlign } from '@mui/system';
 import { SupportAgent } from '@mui/icons-material';
 import GroupsIcon from '@mui/icons-material/Groups';
 import LaptopIcon from '@mui/icons-material/Laptop';
@@ -177,10 +177,10 @@ export default function layout({ title, description, children }) {
         <Box sx={{ flexGrow: 1 }} className={styles.slide_after}>
           <Grid container spacing={2}>
             <Grid item xs={4} md={4}>
-              <Item sx={{ background: 'white' }}>
+              <Item sx={{ background: 'white'}}>
                 {' '}
                 <Card sx={{ maxWidth: 345 }}>
-                  <CardActionArea>
+                  <CardActionArea sx={classes.commone_iconclass}>
                     <HailIcon sx={classes.courses_icon} />
                     <CardMedia
                     // component="img"
@@ -212,7 +212,7 @@ export default function layout({ title, description, children }) {
             <Grid item xs={4} md={4}>
               <Item>
                 <Card sx={{ maxWidth: 345 }}>
-                  <CardActionArea>
+                  <CardActionArea sx={classes.commone_iconclass}>
                     <GroupsIcon sx={classes.courses_icon} />
                     <CardMedia
                     // component="img"
@@ -244,7 +244,7 @@ export default function layout({ title, description, children }) {
             <Grid item xs={4} md={4}>
               <Item>
                 <Card sx={{ maxWidth: 345 }}>
-                  <CardActionArea>
+                  <CardActionArea sx={classes.commone_iconclass}>
                     <LaptopIcon sx={classes.courses_icon} />
                     <CardMedia
                     // component="img"
@@ -277,8 +277,8 @@ export default function layout({ title, description, children }) {
         </Box>
       </Container>
       {/* Welcom  Section */}
-      <Container component="main">
-        <Typography variant="h4" textAlign="center">
+      <Container component="main" sx={classes.welcome_section}>
+        <Typography variant="h4" textAlign="center" sx={classes.welcome_text} >
           Welcome To
         </Typography>
         <Typography variant="h5" textAlign="center" sx={classes.Institute_name}>
@@ -311,7 +311,7 @@ export default function layout({ title, description, children }) {
         {/* <hr></hr> */}
       </Container>
       {/* Our Courses  Section */}
-      <Container component="main" sx={classes.main}>
+      <Container component="main" sx={classes.Our_Courses_Section}>
         <Typography
           variant="h4"
           textAlign="center"
@@ -329,9 +329,11 @@ export default function layout({ title, description, children }) {
         {/* <hr></hr> */}
         {children}
       </Container>
+
       {/* Our Facility  Section */}
-      <Container component="main">
-        <Typography variant="h6" textAlign="center">
+       {/* <div sx={classes.facilities_section}>  */}
+      <Container component="main" sx={classes.facilities_section}>
+        <Typography variant="h6" textAlign="center" sx={classes.europeanit_name}>
           European IT
         </Typography>
         <Typography
@@ -344,10 +346,10 @@ export default function layout({ title, description, children }) {
         <Box sx={{ flexGrow: 1 }}>
           <Grid container spacing={2}>
             <Grid item xs={4} md={4}>
-              <Item sx={{ background: 'white' }}>
+              <Item>
                 {' '}
                 <Card sx={{ maxWidth: 500 }}>
-                  <CardActionArea>
+                  <CardActionArea >
                     <SupportAgentIcon sx={{ fontSize: 40 }} />
 
                     <CardContent>
@@ -525,9 +527,10 @@ export default function layout({ title, description, children }) {
           </Grid>
         </Box>
       </Container>
+      {/* </div> */}
       {/* Our Partnet Section */}
-      <Container>
-        <Typography variant="h4" textAlign="center">
+      <Container sx={classes.our_partners_section}>
+        <Typography variant="h4" textAlign="center"  sx={classes.our_partners_head}>
           Our Partners
         </Typography>
         <div className={styles.carosoul}>
