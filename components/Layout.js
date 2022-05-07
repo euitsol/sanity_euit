@@ -142,14 +142,14 @@ export default function layout({ title, description, children }) {
         </Toolbar>
       </AppBar>
       {/* Slider Section */}
-      <Container>
+      {/* <Container> */}
         <div className={styles.carosoul}>
           <Carousel breakPoints={breakPoints}>
             <Item>
               <CardMedia
                 sx={classes.carosoul}
                 component="img"
-                image={'images/slider2.webp'}
+                image={'images/Big-Data-Courses.jpg'}
                 title="ok"
               ></CardMedia>
             </Item>
@@ -157,7 +157,7 @@ export default function layout({ title, description, children }) {
               <CardMedia
                 sx={classes.carosoul}
                 component="img"
-                image={'images/slider2.webp'}
+                image={'images/Big-Data-Courses.jpg'}
                 title="ok"
               ></CardMedia>
             </Item>
@@ -165,13 +165,13 @@ export default function layout({ title, description, children }) {
               <CardMedia
                 sx={classes.carosoul}
                 component="img"
-                image={'images/slider2.webp'}
+                image={'images/Big-Data-Courses.jpg'}
                 title="ok"
               ></CardMedia>
             </Item>
           </Carousel>
         </div>
-      </Container>
+      {/* </Container> */}
       {/* Below Slider Section */}
       <Container component="main">
         <Box sx={{ flexGrow: 1 }} className={styles.slide_after}>

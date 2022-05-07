@@ -81,9 +81,15 @@ const classes = {
   },
 
   // slider_section
-  eAyARa:{
+  hHJTFD: {
+    margin: '0',
+  },
+  carosoul: {
+   margin: '0',
+  },
+  eAyARa : {
     position: 'absolute',
-    right: '0',
+    zindex: '9'
   },
 
   // welcome_section
