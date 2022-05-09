@@ -186,6 +186,11 @@ const classes = {
     fontWeight: '400',
     lineHeight: '30px',
   },
+  facilities_content:{
+    minHeight: '250px',
+
+
+  },
 
   //our partners
   our_partners_section: {
@@ -230,6 +235,19 @@ courses_icon :{
   borderRadius: '50%',
   width: '70px',
   minHeight: '70px',
+},
+
+// footer_contact_section
+footer_contact_section: {
+  backgroundColor: 'red',
+},
+
+footer_contact_head: {
+  fontFamily: '"Montserrat", Sans-serif',
+  fontSize: '16px',
+  fontWeight: '800',
+  marginBottom: '10px',
+  color: ' #3C6382',
 },
 
 // footer_section

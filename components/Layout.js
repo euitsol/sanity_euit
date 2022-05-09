@@ -36,6 +36,7 @@ import GroupsIcon from '@mui/icons-material/Groups';
 import LaptopIcon from '@mui/icons-material/Laptop';
 import HailIcon from '@mui/icons-material/Hail';
 // import { AccessTimeIcon } from '@mui/icons-material/AccessTime';
+
 const breakPoints = [{ width: 1, itemsToShow: 1 }];
 const breakPoints2 = [
   { width: 1, itemsToShow: 1 },
@@ -345,10 +346,10 @@ export default function layout({ title, description, children }) {
         </Typography>
         <Box sx={{ flexGrow: 1 }}>
           <Grid container spacing={2}>
-            <Grid item xs={4} md={4}>
-              <Item>
+            <Grid item xs={4} md={4} >
+              <Item >
                 {' '}
-                <Card sx={{ maxWidth: 500 }}>
+                <Card sx={classes.facilities_content}>
                   <CardActionArea >
                     <SupportAgentIcon sx={{ fontSize: 40 }} />
 
@@ -377,7 +378,7 @@ export default function layout({ title, description, children }) {
             </Grid>
             <Grid item xs={4} md={4}>
               <Item>
-                <Card sx={{ maxWidth: 500 }}>
+                <Card sx={classes.facilities_content}>
                   <CardActionArea>
                     <SupportAgentIcon sx={{ fontSize: 40 }} />
 
@@ -406,7 +407,7 @@ export default function layout({ title, description, children }) {
             </Grid>
             <Grid item xs={4} md={4}>
               <Item>
-                <Card sx={{ maxWidth: 500 }}>
+                <Card sx={classes.facilities_content}>
                   <CardActionArea>
                     <SupportAgentIcon sx={{ fontSize: 40 }} />
 
@@ -434,11 +435,11 @@ export default function layout({ title, description, children }) {
               </Item>
             </Grid>
           </Grid>
-          <Grid container spacing={2}>
+          <Grid container spacing={2} sx={{ marginTop: 2 }}>
             <Grid item xs={4} md={4} sx={{ maxHeight: 400 }}>
               <Item sx={{ background: 'white' }}>
                 {' '}
-                <Card sx={{ maxWidth: 500 }}>
+                <Card sx={classes.facilities_content}>
                   <CardActionArea>
                     <SupportAgentIcon sx={{ fontSize: 40 }} />
 
@@ -468,7 +469,7 @@ export default function layout({ title, description, children }) {
             </Grid>
             <Grid item xs={4} md={4}>
               <Item>
-                <Card sx={{ maxWidth: 500 }}>
+                <Card sx={classes.facilities_content}>
                   <CardActionArea>
                     <SupportAgentIcon sx={{ fontSize: 40 }} />
 
@@ -497,7 +498,7 @@ export default function layout({ title, description, children }) {
             </Grid>
             <Grid item xs={4} md={4}>
               <Item>
-                <Card sx={{ maxWidth: 500 }}>
+                <Card sx={classes.facilities_content}>
                   <CardActionArea>
                     <SupportAgentIcon sx={{ fontSize: 40 }} />
 
@@ -602,6 +603,84 @@ export default function layout({ title, description, children }) {
           </Carousel>
         </div>
       </Container>
+
+      {/* footer_contact_section */}
+
+      <div  sx={classes.footer_contact_section}>
+      <Container>
+        <Grid container>
+      <Grid item  md={3}>
+         <SupportAgentIcon sx={{ fontSize: 40 }} /> 
+        <Typography variant="p" display="block" sx={classes.footer_contact_head}>
+          Address 
+          </Typography>
+
+          <Typography variant="span"  display="block" >
+          Noor Mansion (3rd Floor), Plot#04,
+          </Typography>
+
+          <Typography variant="span"  display="block">
+          Main Road#01, Mirpur-10, Dhaka-1216
+          </Typography>
+          </Grid>
+
+          <Grid item  md={3}>
+        <SupportAgentIcon sx={{ fontSize: 40 }} /> 
+        <Typography variant="p"  display="block" sx={classes.footer_contact_head}>
+          Call Us
+          </Typography>
+
+          <Typography variant="span"  display="block" >
+          +880 188 99 77 950
+          </Typography>
+
+          <Typography variant="span"  display="block">
+          +880 188 99 77 951
+          </Typography>
+
+          <Typography variant="span"  display="block">
+          +880 188 99 77 952
+          </Typography>
+          </Grid>
+
+          <Grid item  md={3}>
+        <SupportAgentIcon sx={{ fontSize: 40 }} /> 
+        <Typography variant="p"  display="block" sx={classes.footer_contact_head}>
+         Email 
+          </Typography>
+
+          <Typography variant="span"  display="block">
+          info@europeanit-inst.com
+          </Typography>
+
+          <Typography variant="span"  display="block">
+          help@europeanit-inst.com
+          </Typography>
+          </Grid>
+
+          <Grid item  md={3}>
+         <SupportAgentIcon sx={{ fontSize: 40 }} /> 
+        <Typography variant="p"  display="block" sx={classes.footer_contact_head}>
+        Work Hours 
+          </Typography>
+
+          <Typography variant="span"  display="block">
+          Monday - Sunday
+          </Typography>
+
+          <Typography variant="span"  display="block">
+          10AM - 09PM
+          </Typography>
+          </Grid>
+       </Grid>
+       <Button variant="contained" size="medium" textAlign="center">Contact Us</Button>
+      </Container>
+      </div>
+
+
+
+
+
       <Box component="footer" sx={classes.footer_section}>
         <Container>
           <Typography sx={classes.footer_text}>
