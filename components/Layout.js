@@ -20,21 +20,21 @@ import {
   Card,
   CardActions,
   CardActionArea,
-} from '@mui/material';
-import { createTheme } from '@mui/material/styles';
-import Head from 'next/head';
-import NextLink from 'next/link';
-import * as React from 'react';
-import classes from '../utils/classes';
-import Carousel from 'react-elastic-carousel';
-import Item from './Item';
-import styles from '../styles/carosoul.module.css';
+} from "@mui/material";
+import { createTheme } from "@mui/material/styles";
+import Head from "next/head";
+import NextLink from "next/link";
+import * as React from "react";
+import classes from "../utils/classes";
+import Carousel from "react-elastic-carousel";
+import Item from "./Item";
+import styles from "../styles/carosoul.module.css";
 
-import { height, textAlign } from '@mui/system';
-import { SupportAgent } from '@mui/icons-material';
-import GroupsIcon from '@mui/icons-material/Groups';
-import LaptopIcon from '@mui/icons-material/Laptop';
-import HailIcon from '@mui/icons-material/Hail';
+import { height, textAlign } from "@mui/system";
+import { SupportAgent } from "@mui/icons-material";
+import GroupsIcon from "@mui/icons-material/Groups";
+import LaptopIcon from "@mui/icons-material/Laptop";
+import HailIcon from "@mui/icons-material/Hail";
 // import { AccessTimeIcon } from '@mui/icons-material/AccessTime';
 
 const breakPoints = [{ width: 1, itemsToShow: 1 }];
@@ -45,35 +45,35 @@ const breakPoints2 = [
   { width: 1200, itemsToShow: 4 },
 ];
 // const [value, setValue] = React.useState(0);
-import SupportAgentIcon from '@mui/icons-material/SupportAgent';
+import SupportAgentIcon from "@mui/icons-material/SupportAgent";
 export default function layout({ title, description, children }) {
   const theme = createTheme({
     components: {
       MuiLink: {
         defaultProps: {
-          underline: 'hover',
+          underline: "hover",
         },
       },
     },
     typography: {
       h1: {
-        fontSize: '1.6rem',
+        fontSize: "1.6rem",
         fontweight: 400,
-        margin: '1red 0',
+        margin: "1red 0",
       },
       h2: {
-        fontSize: '1.4rem',
+        fontSize: "1.4rem",
         fontweight: 400,
-        margin: '1red 0',
+        margin: "1red 0",
       },
     },
     palette: {
-      mode: 'light',
+      mode: "light",
       primary: {
-        main: '#f0c000',
+        main: "#f0c000",
       },
       secondary: {
-        main: '#208080',
+        main: "#208080",
       },
     },
   });
@@ -81,7 +81,7 @@ export default function layout({ title, description, children }) {
   return (
     <>
       <Head>
-        <title>{title ? `${title} - Sanity Euit` : 'Sanity Euit'}</title>
+        <title>{title ? `${title} - Sanity Euit` : "Sanity Euit"}</title>
         {description && <meta name="description" content={description}></meta>}
       </Head>
       <ThemeProvider theme={theme}>
@@ -92,7 +92,7 @@ export default function layout({ title, description, children }) {
           <CardMedia
             sx={classes.logo}
             component="img"
-            image={'images/logo.png'}
+            image={"images/logo.png"}
             title="ok"
           ></CardMedia>
           {/* <Box
@@ -144,42 +144,42 @@ export default function layout({ title, description, children }) {
       </AppBar>
       {/* Slider Section */}
       {/* <Container> */}
-        <div className={styles.carosoul}>
-          <Carousel breakPoints={breakPoints}>
-            <Item>
-              <CardMedia
-                sx={classes.carosoul}
-                component="img"
-                image={'images/Big-Data-Courses.jpg'}
-                title="ok"
-              ></CardMedia>
-            </Item>
-            <Item>
-              <CardMedia
-                sx={classes.carosoul}
-                component="img"
-                image={'images/Big-Data-Courses.jpg'}
-                title="ok"
-              ></CardMedia>
-            </Item>
-            <Item>
-              <CardMedia
-                sx={classes.carosoul}
-                component="img"
-                image={'images/Big-Data-Courses.jpg'}
-                title="ok"
-              ></CardMedia>
-            </Item>
-          </Carousel>
-        </div>
+      <div className={styles.carosoul}>
+        <Carousel breakPoints={breakPoints}>
+          <Item>
+            <CardMedia
+              sx={classes.carosoul}
+              component="img"
+              image={"images/Big-Data-Courses.jpg"}
+              title="ok"
+            ></CardMedia>
+          </Item>
+          <Item>
+            <CardMedia
+              sx={classes.carosoul}
+              component="img"
+              image={"images/Big-Data-Courses.jpg"}
+              title="ok"
+            ></CardMedia>
+          </Item>
+          <Item>
+            <CardMedia
+              sx={classes.carosoul}
+              component="img"
+              image={"images/Big-Data-Courses.jpg"}
+              title="ok"
+            ></CardMedia>
+          </Item>
+        </Carousel>
+      </div>
       {/* </Container> */}
       {/* Below Slider Section */}
       <Container component="main">
         <Box sx={{ flexGrow: 1 }} className={styles.slide_after}>
           <Grid container spacing={2}>
             <Grid item xs={4} md={4}>
-              <Item sx={{ background: 'white'}}>
-                {' '}
+              <Item sx={{ background: "white" }}>
+                {" "}
                 <Card sx={{ maxWidth: 345 }}>
                   <CardActionArea sx={classes.commone_iconclass}>
                     <HailIcon sx={classes.courses_icon} />
@@ -279,7 +279,7 @@ export default function layout({ title, description, children }) {
       </Container>
       {/* Welcom  Section */}
       <Container component="main" sx={classes.welcome_section}>
-        <Typography variant="h4" textAlign="center" sx={classes.welcome_text} >
+        <Typography variant="h4" textAlign="center" sx={classes.welcome_text}>
           Welcome To
         </Typography>
         <Typography variant="h5" textAlign="center" sx={classes.Institute_name}>
@@ -291,10 +291,10 @@ export default function layout({ title, description, children }) {
           sx={classes.europeanit_detale}
         >
           European IT startedasdasdsad off as an IT and web-based solutions,
-          services and{' '}
+          services and{" "}
           <a href="https://europeanit-inst.com/course/web-design/">
             web design
-          </a>{' '}
+          </a>{" "}
           company in Ireland, Germany, and Bangladesh in 2009. Over the years,
           European IT has delivered successful projects in multiple platforms to
           clients in the US, Canada, UK, Ireland, Norway, Belgium, Netherlands,
@@ -305,7 +305,7 @@ export default function layout({ title, description, children }) {
           international standards and quality. Additionally,
           <a href="https://europeanit-inst.com/" sx={classes.delate_text_link}>
             European IT Institute
-          </a>{' '}
+          </a>{" "}
           offers training delivery solutions to corporations, institutions, and
           individuals along with internship for graduates.
         </Typography>
@@ -332,9 +332,13 @@ export default function layout({ title, description, children }) {
       </Container>
 
       {/* Our Facility  Section */}
-       {/* <div sx={classes.facilities_section}>  */}
+      {/* <div sx={classes.facilities_section}>  */}
       <Container component="main" sx={classes.facilities_section}>
-        <Typography variant="h6" textAlign="center" sx={classes.europeanit_name}>
+        <Typography
+          variant="h6"
+          textAlign="center"
+          sx={classes.europeanit_name}
+        >
           European IT
         </Typography>
         <Typography
@@ -346,11 +350,11 @@ export default function layout({ title, description, children }) {
         </Typography>
         <Box sx={{ flexGrow: 1 }}>
           <Grid container spacing={2}>
-            <Grid item xs={4} md={4} >
-              <Item >
-                {' '}
+            <Grid item xs={4} md={4}>
+              <Item>
+                {" "}
                 <Card sx={classes.facilities_content}>
-                  <CardActionArea >
+                  <CardActionArea>
                     <SupportAgentIcon sx={{ fontSize: 40 }} />
 
                     <CardContent>
@@ -437,8 +441,8 @@ export default function layout({ title, description, children }) {
           </Grid>
           <Grid container spacing={2} sx={{ marginTop: 2 }}>
             <Grid item xs={4} md={4} sx={{ maxHeight: 400 }}>
-              <Item sx={{ background: 'white' }}>
-                {' '}
+              <Item sx={{ background: "white" }}>
+                {" "}
                 <Card sx={classes.facilities_content}>
                   <CardActionArea>
                     <SupportAgentIcon sx={{ fontSize: 40 }} />
@@ -516,7 +520,7 @@ export default function layout({ title, description, children }) {
                         color="text.secondary"
                         sx={classes.facilities_content_paragraph}
                       >
-                        European IT manage job for talented{' '}
+                        European IT manage job for talented{" "}
                         <a href="#">students</a> through their job placement
                         cell at European IT own firm as well as other firms.
                       </Typography>
@@ -531,7 +535,11 @@ export default function layout({ title, description, children }) {
       {/* </div> */}
       {/* Our Partnet Section */}
       <Container sx={classes.our_partners_section}>
-        <Typography variant="h4" textAlign="center"  sx={classes.our_partners_head}>
+        <Typography
+          variant="h4"
+          textAlign="center"
+          sx={classes.our_partners_head}
+        >
           Our Partners
         </Typography>
         <div className={styles.carosoul}>
@@ -540,7 +548,7 @@ export default function layout({ title, description, children }) {
               <CardMedia
                 sx={classes.carosoul}
                 component="img"
-                image={'images/slider2.webp'}
+                image={"images/slider2.webp"}
                 title="ok"
               ></CardMedia>
             </Item>
@@ -548,7 +556,7 @@ export default function layout({ title, description, children }) {
               <CardMedia
                 sx={classes.carosoul}
                 component="img"
-                image={'images/slider2.webp'}
+                image={"images/slider2.webp"}
                 title="ok"
               ></CardMedia>
             </Item>
@@ -556,7 +564,7 @@ export default function layout({ title, description, children }) {
               <CardMedia
                 sx={classes.carosoul}
                 component="img"
-                image={'images/slider2.webp'}
+                image={"images/slider2.webp"}
                 title="ok"
               ></CardMedia>
             </Item>
@@ -564,7 +572,7 @@ export default function layout({ title, description, children }) {
               <CardMedia
                 sx={classes.carosoul}
                 component="img"
-                image={'images/slider2.webp'}
+                image={"images/slider2.webp"}
                 title="ok"
               ></CardMedia>
             </Item>
@@ -572,7 +580,7 @@ export default function layout({ title, description, children }) {
               <CardMedia
                 sx={classes.carosoul}
                 component="img"
-                image={'images/slider2.webp'}
+                image={"images/slider2.webp"}
                 title="ok"
               ></CardMedia>
             </Item>
@@ -580,7 +588,7 @@ export default function layout({ title, description, children }) {
               <CardMedia
                 sx={classes.carosoul}
                 component="img"
-                image={'images/slider2.webp'}
+                image={"images/slider2.webp"}
                 title="ok"
               ></CardMedia>
             </Item>
@@ -588,7 +596,7 @@ export default function layout({ title, description, children }) {
               <CardMedia
                 sx={classes.carosoul}
                 component="img"
-                image={'images/slider2.webp'}
+                image={"images/slider2.webp"}
                 title="ok"
               ></CardMedia>
             </Item>
@@ -596,7 +604,7 @@ export default function layout({ title, description, children }) {
               <CardMedia
                 sx={classes.carosoul}
                 component="img"
-                image={'images/slider2.webp'}
+                image={"images/slider2.webp"}
                 title="ok"
               ></CardMedia>
             </Item>
@@ -606,80 +614,96 @@ export default function layout({ title, description, children }) {
 
       {/* footer_contact_section */}
 
-      <div  sx={classes.footer_contact_section}>
-      <Container>
-        <Grid container>
-      <Grid item  md={3}>
-         <SupportAgentIcon sx={{ fontSize: 40 }} /> 
-        <Typography variant="p" display="block" sx={classes.footer_contact_head}>
-          Address 
-          </Typography>
+      <div sx={classes.footer_contact_section} >
+        <Container>
+          <Grid container  sx={classes.contact_items}>
+            <Grid item md={3}>
+              <SupportAgentIcon sx={{ fontSize: 40 }} />
+              <Typography
+                variant="p"
+                display="block"
+                sx={classes.footer_contact_head}
+              >
+                Address
+              </Typography>
 
-          <Typography variant="span"  display="block" >
-          Noor Mansion (3rd Floor), Plot#04,
-          </Typography>
+              <Typography variant="span" display="block" sx={classes.footer_contact_item}>
+                Noor Mansion (3rd Floor), Plot#04,
+              </Typography>
 
-          <Typography variant="span"  display="block">
-          Main Road#01, Mirpur-10, Dhaka-1216
-          </Typography>
+              <Typography variant="span" display="block" sx={classes.footer_contact_item}>
+                Main Road#01, Mirpur-10, Dhaka-1216
+              </Typography>
+            </Grid>
+
+            <Grid item md={3}>
+              <SupportAgentIcon sx={{ fontSize: 40 }} />
+              <Typography
+                variant="p"
+                display="block"
+                sx={classes.footer_contact_head}
+              >
+                Call Us
+              </Typography>
+
+              <Typography variant="span" display="block" sx={classes.footer_contact_item}>
+                +880 188 99 77 950
+              </Typography>
+
+              <Typography variant="span" display="block" sx={classes.footer_contact_item}>
+                +880 188 99 77 951
+              </Typography>
+
+              <Typography variant="span" display="block" sx={classes.footer_contact_item}>
+                +880 188 99 77 952
+              </Typography>
+            </Grid>
+
+            <Grid item md={3}>
+              <SupportAgentIcon sx={{ fontSize: 40 }} />
+              <Typography
+                variant="p"
+                display="block"
+                sx={classes.footer_contact_head}
+              >
+                Email
+              </Typography>
+
+              <Typography variant="span" display="block" sx={classes.footer_contact_item}>
+                info@europeanit-inst.com
+              </Typography>
+
+              <Typography variant="span" display="block" sx={classes.footer_contact_item}>
+                help@europeanit-inst.com
+              </Typography>
+            </Grid>
+
+            <Grid item md={3}>
+              <SupportAgentIcon sx={{ fontSize: 40 }} />
+              <Typography
+                variant="p"
+                display="block"
+                sx={classes.footer_contact_head}
+              >
+                Work Hours
+              </Typography>
+
+              <Typography variant="span" display="block" sx={classes.footer_contact_item}>
+                Monday - Sunday
+              </Typography>
+
+              <Typography variant="span" display="block" sx={classes.footer_contact_item}>
+                10AM - 09PM
+              </Typography>
+            </Grid>
           </Grid>
-
-          <Grid item  md={3}>
-        <SupportAgentIcon sx={{ fontSize: 40 }} /> 
-        <Typography variant="p"  display="block" sx={classes.footer_contact_head}>
-          Call Us
-          </Typography>
-
-          <Typography variant="span"  display="block" >
-          +880 188 99 77 950
-          </Typography>
-
-          <Typography variant="span"  display="block">
-          +880 188 99 77 951
-          </Typography>
-
-          <Typography variant="span"  display="block">
-          +880 188 99 77 952
-          </Typography>
-          </Grid>
-
-          <Grid item  md={3}>
-        <SupportAgentIcon sx={{ fontSize: 40 }} /> 
-        <Typography variant="p"  display="block" sx={classes.footer_contact_head}>
-         Email 
-          </Typography>
-
-          <Typography variant="span"  display="block">
-          info@europeanit-inst.com
-          </Typography>
-
-          <Typography variant="span"  display="block">
-          help@europeanit-inst.com
-          </Typography>
-          </Grid>
-
-          <Grid item  md={3}>
-         <SupportAgentIcon sx={{ fontSize: 40 }} /> 
-        <Typography variant="p"  display="block" sx={classes.footer_contact_head}>
-        Work Hours 
-          </Typography>
-
-          <Typography variant="span"  display="block">
-          Monday - Sunday
-          </Typography>
-
-          <Typography variant="span"  display="block">
-          10AM - 09PM
-          </Typography>
-          </Grid>
-       </Grid>
-       <Button variant="contained" size="medium" textAlign="center">Contact Us</Button>
-      </Container>
+          <Box textAlign='center'>
+          <Button variant="contained" size="medium"  sx={classes.contact_button}>
+            Contact Us
+          </Button>
+          </Box>
+        </Container>
       </div>
-
-
-
-
 
       <Box component="footer" sx={classes.footer_section}>
         <Container>

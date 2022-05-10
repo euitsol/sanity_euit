@@ -241,6 +241,9 @@ courses_icon :{
 footer_contact_section: {
   backgroundColor: 'red',
 },
+contact_items: {
+ textAlign: 'center',
+},
 
 footer_contact_head: {
   fontFamily: '"Montserrat", Sans-serif',
@@ -248,6 +251,20 @@ footer_contact_head: {
   fontWeight: '800',
   marginBottom: '10px',
   color: ' #3C6382',
+},
+footer_contact_item: {
+
+  color: '#3C6382',
+    fontFamily: '"Teko", Sans-serif',
+    fontSize: '16px',
+    fontWeight: '400',
+    lineHeight: '24px',
+    letterSpacing: '0.2px',
+    
+},
+contact_button: {
+  marginTop: '30px',
+  marginBottom: '60px',
 },
 
 // footer_section
