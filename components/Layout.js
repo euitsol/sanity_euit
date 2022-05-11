@@ -36,6 +36,12 @@ import GroupsIcon from "@mui/icons-material/Groups";
 import LaptopIcon from "@mui/icons-material/Laptop";
 import HailIcon from "@mui/icons-material/Hail";
 // import { AccessTimeIcon } from '@mui/icons-material/AccessTime';
+import FacebookIcon from "@mui/icons-material/Facebook";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import YouTubeIcon from "@mui/icons-material/YouTube";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import PinterestIcon from "@mui/icons-material/Pinterest";
+import TwitterIcon from "@mui/icons-material/Twitter";
 
 const breakPoints = [{ width: 1, itemsToShow: 1 }];
 const breakPoints2 = [
@@ -532,6 +538,77 @@ export default function layout({ title, description, children }) {
           </Grid>
         </Box>
       </Container>
+
+      {/* job placement section */}
+
+      <Container>
+        <Grid container sx={classes.job_placement_content}>
+          <Grid item md={6} textAlign="center" padding="25px">
+            <Typography variant="p" sx={classes.job_text}>
+              Job
+            </Typography>
+
+            <Typography variant="h4" sx={classes.placement_text}>
+              Placement
+            </Typography>
+
+            <Box
+              component="img"
+              sx={{
+                borderRadius: "50px",
+                marginTop: "20px",
+              }}
+              alt="ok."
+              src="images/European-IT-Rukaiya-Khatun.jpg"
+            />
+
+            <Typography
+              variant="p"
+              display="block"
+              sx={classes.job_placement_bio}
+            >
+              European IT manage the job for talented students through their job
+              placement cell at European IT's firm as well as other firms. I was
+              a student of Pabna Polytechnic Institute. I have completed my
+              industrial attachment from European IT Institute in 2019. From my
+              childhood, I was very much interested in{" "}
+              <a href="#" sx={classes.Graphic_design_link}>
+                Graphic Design
+              </a>{" "}
+              Sector. For that, I have chosen the subject for industrial
+              attachment Graphic Design. It was an awesome experience when I was
+              a student of European IT. The Instructor of this Institute always
+              supported us. After completed my industrial attachment I got a job
+              opportunity from the European IT firm. Not only me but also some
+              of my friends had got the opportunity.
+            </Typography>
+
+            <Typography
+              variant="p"
+              display="block"
+              sx={classes.job_placement_student_name}
+            >
+              Mst Rukiea Khatun
+            </Typography>
+
+            <Typography variant="p" sx={classes.job_placement_tittle}>
+              Graphic Designer
+            </Typography>
+          </Grid>
+
+          <Grid item md={6} padding="25px">
+            <iframe
+              id="eu-video"
+              type="text/html"
+              width="100%"
+              height="580"
+              src={`How We Hire at Google.mp4`}
+              frameBorder="0"
+            ></iframe>
+          </Grid>
+        </Grid>
+      </Container>
+
       {/* </div> */}
       {/* Our Partnet Section */}
       <Container sx={classes.our_partners_section}>
@@ -614,9 +691,9 @@ export default function layout({ title, description, children }) {
 
       {/* footer_contact_section */}
 
-      <div sx={classes.footer_contact_section} >
+      <div sx={classes.footer_contact_section}>
         <Container>
-          <Grid container  sx={classes.contact_items}>
+          <Grid container sx={classes.contact_items}>
             <Grid item md={3}>
               <SupportAgentIcon sx={{ fontSize: 40 }} />
               <Typography
@@ -627,11 +704,19 @@ export default function layout({ title, description, children }) {
                 Address
               </Typography>
 
-              <Typography variant="span" display="block" sx={classes.footer_contact_item}>
+              <Typography
+                variant="span"
+                display="block"
+                sx={classes.footer_contact_item}
+              >
                 Noor Mansion (3rd Floor), Plot#04,
               </Typography>
 
-              <Typography variant="span" display="block" sx={classes.footer_contact_item}>
+              <Typography
+                variant="span"
+                display="block"
+                sx={classes.footer_contact_item}
+              >
                 Main Road#01, Mirpur-10, Dhaka-1216
               </Typography>
             </Grid>
@@ -646,15 +731,27 @@ export default function layout({ title, description, children }) {
                 Call Us
               </Typography>
 
-              <Typography variant="span" display="block" sx={classes.footer_contact_item}>
+              <Typography
+                variant="span"
+                display="block"
+                sx={classes.footer_contact_item}
+              >
                 +880 188 99 77 950
               </Typography>
 
-              <Typography variant="span" display="block" sx={classes.footer_contact_item}>
+              <Typography
+                variant="span"
+                display="block"
+                sx={classes.footer_contact_item}
+              >
                 +880 188 99 77 951
               </Typography>
 
-              <Typography variant="span" display="block" sx={classes.footer_contact_item}>
+              <Typography
+                variant="span"
+                display="block"
+                sx={classes.footer_contact_item}
+              >
                 +880 188 99 77 952
               </Typography>
             </Grid>
@@ -669,11 +766,19 @@ export default function layout({ title, description, children }) {
                 Email
               </Typography>
 
-              <Typography variant="span" display="block" sx={classes.footer_contact_item}>
+              <Typography
+                variant="span"
+                display="block"
+                sx={classes.footer_contact_item}
+              >
                 info@europeanit-inst.com
               </Typography>
 
-              <Typography variant="span" display="block" sx={classes.footer_contact_item}>
+              <Typography
+                variant="span"
+                display="block"
+                sx={classes.footer_contact_item}
+              >
                 help@europeanit-inst.com
               </Typography>
             </Grid>
@@ -688,20 +793,104 @@ export default function layout({ title, description, children }) {
                 Work Hours
               </Typography>
 
-              <Typography variant="span" display="block" sx={classes.footer_contact_item}>
+              <Typography
+                variant="span"
+                display="block"
+                sx={classes.footer_contact_item}
+              >
                 Monday - Sunday
               </Typography>
 
-              <Typography variant="span" display="block" sx={classes.footer_contact_item}>
+              <Typography
+                variant="span"
+                display="block"
+                sx={classes.footer_contact_item}
+              >
                 10AM - 09PM
               </Typography>
             </Grid>
           </Grid>
-          <Box textAlign='center'>
-          <Button variant="contained" size="medium"  sx={classes.contact_button}>
-            Contact Us
-          </Button>
+          <Box textAlign="center">
+            <Button
+              variant="contained"
+              size="medium"
+              sx={classes.contact_button}
+            >
+              Contact Us
+            </Button>
           </Box>
+        </Container>
+      </div>
+
+      {/* footer logo and icon section */}
+
+      <div sx={classes.footer_logo_icon_content}>
+        <Container>
+          <Grid container sx={classes.footer_logo_icon_content}>
+            <Grid item md={3}>
+              <Link href="#">
+                <Box
+                  component="img"
+                  sx={{
+                    height: 60,
+                    width: 250,
+                    maxHeight: { xs: 233, md: 167 },
+                    maxWidth: { xs: 350, md: 250 },
+                  }}
+                  alt="ok."
+                  src="images/logo.png"
+                />
+              </Link>
+            </Grid>
+
+            <Grid item md={4}>
+              <Typography
+                variant="h3"
+                display="block"
+                textAlign="center"
+                sx={classes.follow_us_text}
+              >
+                Follow Us
+              </Typography>
+              <Box textAlign="center">
+                <Link href="#" underline="none">
+                  <FacebookIcon sx={classes.footer_icon} />
+                </Link>
+
+                <Link href="#" underline="none">
+                  <InstagramIcon sx={classes.footer_icon} />
+                </Link>
+
+                <Link href="#" underline="none">
+                  <YouTubeIcon sx={classes.footer_icon} />
+                </Link>
+
+                <Link href="#" underline="none">
+                  <LinkedInIcon sx={classes.footer_icon} />
+                </Link>
+
+                <Link href="#" underline="none">
+                  <PinterestIcon sx={classes.footer_icon} />
+                </Link>
+
+                <Link href="#" underline="none">
+                  <TwitterIcon sx={classes.footer_icon} />
+                </Link>
+              </Box>
+            </Grid>
+
+            <Grid item md={5} textAlign="center">
+              <Box
+                component="img"
+                sx={{
+                  width: 386,
+                  height: 75,
+                }}
+                alt="ok."
+                src="images/your-journy-to.png"
+              />
+            </Grid>
+          </Grid>
         </Container>
       </div>
 

@@ -191,6 +191,55 @@ const classes = {
 
 
   },
+  // job placement section
+  job_text:{
+    color: '#3C6382',
+    fontFamily: '"Teko", Sans-serif',
+    fontSize: '18px',
+    fontWeight: '500',
+    textTransform: 'uppercase',
+  },
+
+  placement_text:{
+    color: '#3C6382',
+    fontFamily: '"Montserrat", Sans-serif',
+    fontSize: '30px',
+    fontWeight: '700',
+  },
+  job_placement_bio:{
+    color: '#000000',
+    fontFamily: '"Open Sans", Sans-serif',
+    fontSize: '16px',
+    fontWeight: '400',
+    lineHeight: '30px',
+    marginTop: '30px',
+    marginBottom: '22px',
+  },
+  job_placement_student_name:{
+    color: '#00AEEF',
+    fontFamily: '"Montserrat", Sans-serif',
+    fontSize: '18px',
+    fontWeight: '700',
+    marginBottom: '10px',
+  },
+  job_placement_tittle:{
+    color: '#8B8F91',
+    fontFamily: '"Montserrat", Sans-serif',
+    fontSize: '16px',
+    fontWeight: '500',
+  },
+  job_placement_content:{
+      backgroundColor: ' #F4F4F4',
+      padding: '60px 0',
+  },
+
+  
+
+
+
+  
+  
+  
 
   //our partners
   our_partners_section: {
@@ -265,6 +314,23 @@ footer_contact_item: {
 contact_button: {
   marginTop: '30px',
   marginBottom: '60px',
+},
+
+// footer logo and icon section 
+follow_us_text: {
+  fontFamily: '"Montserrat", Sans-serif',
+  fontSize: '30px',
+  fontWeight: '700',
+  color: ' #3C6382',
+},
+footer_logo_icon_content:{
+  backgroundColor: '#D3DEE9',
+   padding: ' 50px 0',
+},
+footer_icon :{
+  margin: '0px 6px',
+  color: '#3C6382',
+  marginTop: '20px',
 },
 
 // footer_section
