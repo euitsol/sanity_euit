@@ -234,13 +234,6 @@ const classes = {
   },
 
   
-
-
-
-  
-  
-  
-
   //our partners
   our_partners_section: {
     padding: '50px 50px 50px 50px',
@@ -326,6 +319,8 @@ follow_us_text: {
 footer_logo_icon_content:{
   backgroundColor: '#D3DEE9',
    padding: ' 50px 0',
+   alignItems: 'center',
+
 },
 footer_icon :{
   margin: '0px 6px',

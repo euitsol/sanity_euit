@@ -141,6 +141,7 @@ export default function layout({ title, description, children }) {
               </NextLink>
             </Tabs>
           </Container>
+
           {/* <NextLink href="/" passHref>
             <Link>
               <Typography sx={classes.brand}>European IT Institute</Typography>
@@ -825,17 +826,18 @@ export default function layout({ title, description, children }) {
       {/* footer logo and icon section */}
 
       <div sx={classes.footer_logo_icon_content}>
-        <Container>
+        {/* <Container> */}
           <Grid container sx={classes.footer_logo_icon_content}>
-            <Grid item md={3}>
-              <Link href="#">
+            <Grid item md={4}   textAlign="center">
+              <Link href="#" >
                 <Box
                   component="img"
+                 
                   sx={{
-                    height: 60,
-                    width: 250,
-                    maxHeight: { xs: 233, md: 167 },
-                    maxWidth: { xs: 350, md: 250 },
+                    // height: 60,
+                    // width: 250,
+                    // maxHeight: { xs: 233, md: 167 },
+                    // maxWidth: { xs: 350, md: 250 },
                   }}
                   alt="ok."
                   src="images/logo.png"
@@ -879,7 +881,7 @@ export default function layout({ title, description, children }) {
               </Box>
             </Grid>
 
-            <Grid item md={5} textAlign="center">
+            <Grid item md={4} textAlign="center">
               <Box
                 component="img"
                 sx={{
@@ -891,7 +893,7 @@ export default function layout({ title, description, children }) {
               />
             </Grid>
           </Grid>
-        </Container>
+        {/* </Container> */}
       </div>
 
       <Box component="footer" sx={classes.footer_section}>
