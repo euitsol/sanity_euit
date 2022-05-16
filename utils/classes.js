@@ -92,6 +92,12 @@ const classes = {
     zindex: '9'
   },
 
+  // below slider
+  cardContent:{
+    width: '100%'
+  },
+
+
   // welcome_section
 
   welcome_section: {

@@ -184,10 +184,9 @@ export default function layout({ title, description, children }) {
       <Container component="main">
         <Box sx={{ flexGrow: 1 }} className={styles.slide_after}>
           <Grid container spacing={2}>
-            <Grid item xs={4} md={4}>
-              <Item sx={{ background: "white" }}>
-                {" "}
-                <Card sx={{ maxWidth: 345 }}>
+            <Grid item xs={4} md={4} style={{width:'100%'}}>
+              <Item sx={{ background: "white" }}  style={{width:'100%'}}>
+                <Card sx={{ maxWidth: '100%' }}>
                   <CardActionArea sx={classes.commone_iconclass}>
                     <HailIcon sx={classes.courses_icon} />
                     <CardMedia
@@ -222,12 +221,7 @@ export default function layout({ title, description, children }) {
                 <Card sx={{ maxWidth: 345 }}>
                   <CardActionArea sx={classes.commone_iconclass}>
                     <GroupsIcon sx={classes.courses_icon} />
-                    <CardMedia
-                    // component="img"
-                    // height="140"
-                    // image="images/laptop-svgrepo-com.svg"
-                    // alt="green iguana"
-                    />
+                   
                     <CardContent>
                       <Typography
                         gutterBottom
@@ -294,10 +288,10 @@ export default function layout({ title, description, children }) {
         </Typography>
         <Typography
           variant="p"
-          textAlign="center"
+          alignItems="center"
           sx={classes.europeanit_detale}
         >
-          European IT startedasdasdsad off as an IT and web-based solutions,
+          European IT started off as an IT and web-based solutions,
           services and{" "}
           <a href="https://europeanit-inst.com/course/web-design/">
             web design
@@ -507,7 +501,7 @@ export default function layout({ title, description, children }) {
                 </Card>
               </Item>
             </Grid>
-            <Grid item xs={4} md={4}>
+            <Grid item xs={4} md={4} className={{padding:'0'}}>
               <Item>
                 <Card sx={classes.facilities_content}>
                   <CardActionArea>
@@ -569,7 +563,7 @@ export default function layout({ title, description, children }) {
               sx={classes.job_placement_bio}
             >
               European IT manage the job for talented students through their job
-              placement cell at European IT's firm as well as other firms. I was
+              placement cell at European ITs firm as well as other firms. I was
               a student of Pabna Polytechnic Institute. I have completed my
               industrial attachment from European IT Institute in 2019. From my
               childhood, I was very much interested in{" "}
